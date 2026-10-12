@@ -1,0 +1,2062 @@
+FatTree topology input file: /users/hongyi9/gap-aware-reps/htsim/sim/datacenter/topologies/reps/fat_tree_32_1os_2t_400g.topo
+traffic matrix input file: /users/hongyi9/gap-aware-reps/htsim/sim/datacenter/connection_matrices/allreduce_n32.cm
+endtime(us) 90000
+random seed 44
+Load balancing algorithm set to  oblivious
+Setting receiver SACK bytes threshold to 4000 bytes 
+no of paths 65535
+sender based CC enabled ONLY
+sender based algo mprdma
+Setting queuesize to 101 packets 
+cwnd 152
+Parsing failuregenerator_input file: /users/hongyi9/gap-aware-reps/htsim/sim/failures_input/fail_one_switch.txt
+Trimming disabled, dropping instread.
+Filename: fail_one_switch.txt
+Filename: fail_one_switch.txt
+Size of failing cables is 0
+Parsed args
+Setting ECN for queues with size 419150, with parameters low 103750 high 315400 enable on tor downlink 1
+enable quick adapt gate
+Logging to logout.dat
+Linkspeed set to 400Gbps
+Loading connection matrix from  /users/hongyi9/gap-aware-reps/htsim/sim/datacenter/connection_matrices/allreduce_n32.cm
+Nodes: 32 Connections: 496 Triggers: 480 Failures: 0
+Chosen filter for metric globalInfo: Filter: regex=.*, enabled=1, downsampling_ratio=1
+Topology load done
+Fat Tree topology (0) with 1us Src-ToR links, 1us ToR-Agg links, 0us ToR switch latency, 0us Agg switch latency for 4us diameter latency.
+no_of_tor_uplinks: 32
+No of nodes: 32
+No of pods: 1
+Hosts per pod: 32
+Hosts per pod: 32
+ToR switches per pod: 8
+Agg switches per pod: 4
+No of core switches: 0
+Tier 0 QueueSize Down 419150 bytes
+Tier 0 QueueSize Up 419150 bytes
+Tier 1 QueueSize Down 419150 bytes
+Tier 1 QueueSize Up 419150 bytes
+Chosen filter for metric queueEnq_LS0->DST0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS0->DST0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS0->DST1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS0->DST1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+queue_id 2 ecn_low 103750 ecn_high 315400
+Chosen filter for metric queueEnq_LS0->DST2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS0->DST2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS0->DST3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS0->DST3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS1->DST4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS1->DST4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS1->DST5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS1->DST5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS1->DST6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS1->DST6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS1->DST7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS1->DST7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS2->DST8(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS2->DST8(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS2->DST9(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS2->DST9(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS2->DST10(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS2->DST10(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS2->DST11(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS2->DST11(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS3->DST12(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS3->DST12(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS3->DST13(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS3->DST13(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS3->DST14(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS3->DST14(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS3->DST15(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS3->DST15(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS4->DST16(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS4->DST16(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS4->DST17(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS4->DST17(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS4->DST18(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS4->DST18(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS4->DST19(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS4->DST19(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS5->DST20(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS5->DST20(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS5->DST21(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS5->DST21(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS5->DST22(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS5->DST22(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS5->DST23(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS5->DST23(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS6->DST24(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS6->DST24(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS6->DST25(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS6->DST25(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS6->DST26(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS6->DST26(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS6->DST27(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS6->DST27(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS7->DST28(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS7->DST28(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS7->DST29(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS7->DST29(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS7->DST30(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS7->DST30(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS7->DST31(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS7->DST31(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_US0->LS_0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US0->LS_0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 0 to 0
+Chosen filter for metric queueEnq_LS0->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS0->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 0 0 0: Pipe-LS0->US0(0)
+Chosen filter for metric queueEnq_US1->LS_0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US1->LS_0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 0 to 1
+Chosen filter for metric queueEnq_LS0->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS0->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 0 1 0: Pipe-LS0->US1(0)
+Chosen filter for metric queueEnq_US2->LS_0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US2->LS_0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 0 to 2
+Chosen filter for metric queueEnq_LS0->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS0->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 0 2 0: Pipe-LS0->US2(0)
+Chosen filter for metric queueEnq_US3->LS_0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US3->LS_0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 0 to 3
+Chosen filter for metric queueEnq_LS0->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS0->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 0 3 0: Pipe-LS0->US3(0)
+Chosen filter for metric queueEnq_US0->LS_1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US0->LS_1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 1 to 0
+Chosen filter for metric queueEnq_LS1->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS1->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 1 0 0: Pipe-LS1->US0(0)
+Chosen filter for metric queueEnq_US1->LS_1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US1->LS_1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 1 to 1
+Chosen filter for metric queueEnq_LS1->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS1->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 1 1 0: Pipe-LS1->US1(0)
+Chosen filter for metric queueEnq_US2->LS_1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US2->LS_1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 1 to 2
+Chosen filter for metric queueEnq_LS1->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS1->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 1 2 0: Pipe-LS1->US2(0)
+Chosen filter for metric queueEnq_US3->LS_1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US3->LS_1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 1 to 3
+Chosen filter for metric queueEnq_LS1->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS1->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 1 3 0: Pipe-LS1->US3(0)
+Chosen filter for metric queueEnq_US0->LS_2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US0->LS_2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 2 to 0
+Chosen filter for metric queueEnq_LS2->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS2->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 2 0 0: Pipe-LS2->US0(0)
+Chosen filter for metric queueEnq_US1->LS_2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US1->LS_2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 2 to 1
+Chosen filter for metric queueEnq_LS2->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS2->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 2 1 0: Pipe-LS2->US1(0)
+Chosen filter for metric queueEnq_US2->LS_2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US2->LS_2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 2 to 2
+Chosen filter for metric queueEnq_LS2->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS2->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 2 2 0: Pipe-LS2->US2(0)
+Chosen filter for metric queueEnq_US3->LS_2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US3->LS_2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 2 to 3
+Chosen filter for metric queueEnq_LS2->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS2->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 2 3 0: Pipe-LS2->US3(0)
+Chosen filter for metric queueEnq_US0->LS_3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US0->LS_3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 3 to 0
+Chosen filter for metric queueEnq_LS3->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS3->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 3 0 0: Pipe-LS3->US0(0)
+Chosen filter for metric queueEnq_US1->LS_3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US1->LS_3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 3 to 1
+Chosen filter for metric queueEnq_LS3->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS3->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 3 1 0: Pipe-LS3->US1(0)
+Chosen filter for metric queueEnq_US2->LS_3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US2->LS_3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 3 to 2
+Chosen filter for metric queueEnq_LS3->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS3->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 3 2 0: Pipe-LS3->US2(0)
+Chosen filter for metric queueEnq_US3->LS_3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US3->LS_3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 3 to 3
+Chosen filter for metric queueEnq_LS3->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS3->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 3 3 0: Pipe-LS3->US3(0)
+Chosen filter for metric queueEnq_US0->LS_4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US0->LS_4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 4 to 0
+Chosen filter for metric queueEnq_LS4->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS4->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 4 0 0: Pipe-LS4->US0(0)
+Chosen filter for metric queueEnq_US1->LS_4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US1->LS_4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 4 to 1
+Chosen filter for metric queueEnq_LS4->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS4->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 4 1 0: Pipe-LS4->US1(0)
+Chosen filter for metric queueEnq_US2->LS_4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US2->LS_4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 4 to 2
+Chosen filter for metric queueEnq_LS4->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS4->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 4 2 0: Pipe-LS4->US2(0)
+Chosen filter for metric queueEnq_US3->LS_4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US3->LS_4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 4 to 3
+Chosen filter for metric queueEnq_LS4->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS4->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 4 3 0: Pipe-LS4->US3(0)
+Chosen filter for metric queueEnq_US0->LS_5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US0->LS_5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 5 to 0
+Chosen filter for metric queueEnq_LS5->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS5->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 5 0 0: Pipe-LS5->US0(0)
+Chosen filter for metric queueEnq_US1->LS_5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US1->LS_5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 5 to 1
+Chosen filter for metric queueEnq_LS5->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS5->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 5 1 0: Pipe-LS5->US1(0)
+Chosen filter for metric queueEnq_US2->LS_5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US2->LS_5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 5 to 2
+Chosen filter for metric queueEnq_LS5->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS5->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 5 2 0: Pipe-LS5->US2(0)
+Chosen filter for metric queueEnq_US3->LS_5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US3->LS_5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 5 to 3
+Chosen filter for metric queueEnq_LS5->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS5->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 5 3 0: Pipe-LS5->US3(0)
+Chosen filter for metric queueEnq_US0->LS_6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US0->LS_6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 6 to 0
+Chosen filter for metric queueEnq_LS6->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS6->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 6 0 0: Pipe-LS6->US0(0)
+Chosen filter for metric queueEnq_US1->LS_6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US1->LS_6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 6 to 1
+Chosen filter for metric queueEnq_LS6->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS6->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 6 1 0: Pipe-LS6->US1(0)
+Chosen filter for metric queueEnq_US2->LS_6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US2->LS_6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 6 to 2
+Chosen filter for metric queueEnq_LS6->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS6->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 6 2 0: Pipe-LS6->US2(0)
+Chosen filter for metric queueEnq_US3->LS_6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US3->LS_6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 6 to 3
+Chosen filter for metric queueEnq_LS6->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS6->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 6 3 0: Pipe-LS6->US3(0)
+Chosen filter for metric queueEnq_US0->LS_7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US0->LS_7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 7 to 0
+Chosen filter for metric queueEnq_LS7->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS7->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 7 0 0: Pipe-LS7->US0(0)
+Chosen filter for metric queueEnq_US1->LS_7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US1->LS_7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 7 to 1
+Chosen filter for metric queueEnq_LS7->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS7->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 7 1 0: Pipe-LS7->US1(0)
+Chosen filter for metric queueEnq_US2->LS_7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US2->LS_7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 7 to 2
+Chosen filter for metric queueEnq_LS7->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS7->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 7 2 0: Pipe-LS7->US2(0)
+Chosen filter for metric queueEnq_US3->LS_7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US3->LS_7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 7 to 3
+Chosen filter for metric queueEnq_LS7->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS7->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 7 3 0: Pipe-LS7->US3(0)
+cable and switch failure lists 1 1...
+FatTree constructor done, 32 nodes created
+network_max_unloaded_rtt 8.33712
+Setting queuesize to 419150
+Setting min RTO to 41.8691
+Initializing static NSCC parameters: _reference_network_linkspeed=100000000000 _reference_network_rtt=12000000 _reference_network_bdp=150000 _target_Qdelay=6000000 _network_linkspeed=400000000000 _network_rtt=8337120 _network_bdp=416856 _qa_threshold=2.4e+07 _scaling_factor_a=2.77904 _scaling_factor_b=0.5 _alpha=0.00379432 _fi=13.8952 _eta=1707.44 _qa_scaling=1 _gamma=0.8 _pi=13895 _fi_scale=0.69476 _delay_alpha=0.0125 _adjust_period_threshold=12000000 _adjust_bytes_threshold=8000
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000001 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000003 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000005 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000007 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000009 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000011 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000013 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000015 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000017 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000019 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000021 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000023 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000025 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000027 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000029 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000031 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000033 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000035 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000037 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000039 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000041 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000043 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000045 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000047 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000049 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000051 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000053 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000055 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000057 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000059 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000061 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000063 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000065 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000067 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000069 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000071 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000073 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000075 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000077 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000079 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000081 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000083 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000085 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000087 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000089 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000091 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000093 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000095 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000097 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000099 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000101 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000103 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000105 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000107 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000109 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000111 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000113 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000115 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000117 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000119 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000121 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000123 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000125 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000127 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000129 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000131 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000133 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000135 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000137 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000139 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000141 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000143 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000145 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000147 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000149 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000151 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000153 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000155 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000157 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000159 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000161 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000163 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000165 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000167 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000169 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000171 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000173 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000175 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000177 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000179 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000181 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000183 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000185 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000187 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000189 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000191 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000193 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000195 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000197 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000199 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000201 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000203 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000205 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000207 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000209 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000211 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000213 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000215 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000217 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000219 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000221 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000223 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000225 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000227 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000229 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000231 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000233 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000235 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000237 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000239 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000241 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000243 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000245 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000247 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000249 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000251 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000253 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000255 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000257 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000259 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000261 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000263 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000265 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000267 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000269 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000271 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000273 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000275 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000277 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000279 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000281 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000283 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000285 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000287 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000289 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000291 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000293 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000295 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000297 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000299 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000301 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000303 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000305 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000307 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000309 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000311 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000313 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000315 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000317 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000319 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000321 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000323 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000325 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000327 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000329 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000331 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000333 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000335 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000337 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000339 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000341 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000343 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000345 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000347 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000349 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000351 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000353 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000355 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000357 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000359 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000361 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000363 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000365 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000367 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000369 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000371 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000373 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000375 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000377 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000379 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000381 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000383 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000385 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000387 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000389 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000391 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000393 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000395 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000397 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000399 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000401 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000403 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000405 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000407 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000409 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000411 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000413 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000415 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000417 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000419 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000421 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000423 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000425 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000427 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000429 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000431 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000433 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000435 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000437 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000439 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000441 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000443 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000445 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000447 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000449 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000451 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000453 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000455 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000457 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000459 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000461 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000463 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000465 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000467 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000469 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000471 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000473 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000475 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000477 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000479 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000481 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000483 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000485 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000487 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000489 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000491 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000493 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000495 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000497 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000499 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000501 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000503 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000505 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000507 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000509 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000511 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000513 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000515 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000517 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000519 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000521 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000523 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000525 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000527 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000529 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000531 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000533 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000535 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000537 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000539 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000541 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000543 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000545 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000547 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000549 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000551 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000553 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000555 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000557 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000559 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000561 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000563 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000565 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000567 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000569 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000571 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000573 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000575 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000577 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000579 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000581 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000583 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000585 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000587 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000589 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000591 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000593 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000595 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000597 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000599 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000601 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000603 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000605 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000607 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000609 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000611 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000613 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000615 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000617 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000619 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000621 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000623 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000625 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000627 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000629 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000631 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000633 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000635 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000637 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000639 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000641 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000643 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000645 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000647 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000649 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000651 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000653 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000655 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000657 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000659 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000661 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000663 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000665 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000667 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000669 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000671 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000673 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000675 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000677 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000679 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000681 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000683 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000685 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000687 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000689 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000691 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000693 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000695 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000697 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000699 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000701 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000703 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000705 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000707 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000709 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000711 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000713 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000715 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000717 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000719 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000721 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000723 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000725 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000727 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000729 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000731 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000733 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000735 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000737 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000739 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000741 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000743 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000745 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000747 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000749 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000751 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000753 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000755 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000757 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000759 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000761 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000763 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000765 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000767 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000769 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000771 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000773 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000775 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000777 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000779 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000781 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000783 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000785 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000787 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000789 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000791 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000793 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000795 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000797 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000799 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000801 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000803 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000805 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000807 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000809 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000811 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000813 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000815 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000817 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000819 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000821 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000823 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000825 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000827 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000829 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000831 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000833 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000835 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000837 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000839 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000841 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000843 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000845 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000847 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000849 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000851 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000853 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000855 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000857 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000859 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000861 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000863 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000865 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000867 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000869 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000871 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000873 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000875 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000877 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000879 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000881 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000883 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000885 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000887 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000889 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000891 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000893 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000895 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000897 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000899 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000901 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000903 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000905 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000907 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000909 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000911 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000913 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000915 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000917 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000919 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000921 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000923 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000925 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000927 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000929 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000931 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000933 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000935 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000937 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000939 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000941 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000943 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000945 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000947 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000949 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000951 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000953 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000955 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000957 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000959 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000961 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000963 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000965 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000967 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000969 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000971 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000973 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000975 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000977 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000979 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000981 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000983 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000985 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000987 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000989 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000991 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=630800
+Starting simulation
+Flow Uec_26_5 flowId 1 uecSrc 0 starting at 0
+Flow Uec_5_10 flowId 32 uecSrc 31 starting at 0
+Flow Uec_10_15 flowId 63 uecSrc 62 starting at 0
+Flow Uec_15_25 flowId 94 uecSrc 93 starting at 0
+Flow Uec_25_11 flowId 125 uecSrc 124 starting at 0
+Flow Uec_11_22 flowId 156 uecSrc 155 starting at 0
+Flow Uec_22_6 flowId 187 uecSrc 186 starting at 0
+Flow Uec_6_19 flowId 218 uecSrc 217 starting at 0
+Flow Uec_19_12 flowId 249 uecSrc 248 starting at 0
+Flow Uec_12_16 flowId 280 uecSrc 279 starting at 0
+Flow Uec_16_9 flowId 311 uecSrc 310 starting at 0
+Flow Uec_9_28 flowId 342 uecSrc 341 starting at 0
+Flow Uec_28_14 flowId 373 uecSrc 372 starting at 0
+Flow Uec_14_24 flowId 404 uecSrc 403 starting at 0
+Flow Uec_24_20 flowId 435 uecSrc 434 starting at 0
+Flow Uec_20_26 flowId 466 uecSrc 465 starting at 0
+Total number switches: 0, number of failing switches: 0
+Failed a new Switch name: Switch_UpperPod_0 at 2166000 for 384.000000 seconds
+Total number switches: 5, number of failing switches: 1
+Did not fail Switch1, because of max-percent Switch-name: Switch_UpperPod_1
+Flow Uec_25_11 flowId 125 uecSrc 124 finished at 2896.01 flowSize 4000000 total packets 1012 RTS 33 total bytes 4000194 in_flight now -768 cwnd 15586 sim time 2896.01 bg traffic 0
+Trigger 121 fired, 1 targets
+Flow Uec_11_22 flowId 126 uecSrc 125 starting at 2896.01
+Flow Uec_6_19 flowId 218 uecSrc 217 finished at 2930.95 flowSize 4000000 total packets 1013 RTS 34 total bytes 4000194 in_flight now -512 cwnd 13632 sim time 2930.95 bg traffic 0
+Trigger 211 fired, 1 targets
+Flow Uec_19_12 flowId 219 uecSrc 218 starting at 2930.95
+Flow Uec_10_15 flowId 63 uecSrc 62 finished at 3162.08 flowSize 4000000 total packets 1018 RTS 39 total bytes 4000194 in_flight now -704 cwnd 10342 sim time 3162.08 bg traffic 0
+Trigger 61 fired, 1 targets
+Flow Uec_15_25 flowId 64 uecSrc 63 starting at 3162.08
+Flow Uec_28_14 flowId 373 uecSrc 372 finished at 3392.35 flowSize 4000000 total packets 1021 RTS 42 total bytes 4000194 in_flight now -960 cwnd 12073 sim time 3392.35 bg traffic 0
+Trigger 361 fired, 1 targets
+Flow Uec_14_24 flowId 374 uecSrc 373 starting at 3392.35
+Flow Uec_26_5 flowId 1 uecSrc 0 finished at 3472.68 flowSize 4000000 total packets 1020 RTS 41 total bytes 4000194 in_flight now -768 cwnd 11775 sim time 3472.68 bg traffic 0
+Trigger 1 fired, 1 targets
+Flow Uec_5_10 flowId 2 uecSrc 1 starting at 3472.68
+Flow Uec_24_20 flowId 435 uecSrc 434 finished at 3494.52 flowSize 4000000 total packets 1021 RTS 42 total bytes 4000194 in_flight now -576 cwnd 8406 sim time 3494.52 bg traffic 0
+Trigger 421 fired, 1 targets
+Flow Uec_20_26 flowId 436 uecSrc 435 starting at 3494.52
+Flow Uec_16_9 flowId 311 uecSrc 310 finished at 3518.94 flowSize 4000000 total packets 1019 RTS 40 total bytes 4000194 in_flight now -704 cwnd 11710 sim time 3518.94 bg traffic 0
+Trigger 301 fired, 1 targets
+Flow Uec_9_28 flowId 312 uecSrc 311 starting at 3518.94
+Flow Uec_15_25 flowId 94 uecSrc 93 finished at 3556.69 flowSize 4000000 total packets 1021 RTS 42 total bytes 4000194 in_flight now -576 cwnd 8300 sim time 3556.69 bg traffic 0
+Trigger 91 fired, 1 targets
+Flow Uec_25_11 flowId 95 uecSrc 94 starting at 3556.69
+Flow Uec_5_10 flowId 32 uecSrc 31 finished at 3567.05 flowSize 4000000 total packets 1022 RTS 43 total bytes 4000194 in_flight now -448 cwnd 8106 sim time 3567.05 bg traffic 0
+Trigger 31 fired, 1 targets
+Flow Uec_10_15 flowId 33 uecSrc 32 starting at 3567.05
+Flow Uec_11_22 flowId 156 uecSrc 155 finished at 3581.2 flowSize 4000000 total packets 1022 RTS 43 total bytes 4000194 in_flight now -704 cwnd 17814 sim time 3581.2 bg traffic 0
+Trigger 151 fired, 1 targets
+Flow Uec_22_6 flowId 157 uecSrc 156 starting at 3581.2
+Flow Uec_20_26 flowId 466 uecSrc 465 finished at 3631.87 flowSize 4000000 total packets 1026 RTS 47 total bytes 4000194 in_flight now -832 cwnd 9496 sim time 3631.87 bg traffic 0
+Trigger 451 fired, 1 targets
+Flow Uec_26_5 flowId 467 uecSrc 466 starting at 3631.87
+Flow Uec_14_24 flowId 404 uecSrc 403 finished at 3687.93 flowSize 4000000 total packets 1022 RTS 43 total bytes 4000194 in_flight now -896 cwnd 10278 sim time 3687.93 bg traffic 0
+Trigger 391 fired, 1 targets
+Flow Uec_24_20 flowId 405 uecSrc 404 starting at 3687.93
+Flow Uec_9_28 flowId 342 uecSrc 341 finished at 3917.08 flowSize 4000000 total packets 1022 RTS 43 total bytes 4000194 in_flight now -576 cwnd 11111 sim time 3917.08 bg traffic 0
+Trigger 331 fired, 1 targets
+Flow Uec_28_14 flowId 343 uecSrc 342 starting at 3917.08
+Flow Uec_22_6 flowId 187 uecSrc 186 finished at 4116.33 flowSize 4000000 total packets 1027 RTS 48 total bytes 4000194 in_flight now -832 cwnd 12277 sim time 4116.33 bg traffic 0
+Trigger 181 fired, 1 targets
+Flow Uec_6_19 flowId 188 uecSrc 187 starting at 4116.33
+Flow Uec_19_12 flowId 249 uecSrc 248 finished at 4153.87 flowSize 4000000 total packets 1028 RTS 49 total bytes 4000194 in_flight now -576 cwnd 8300 sim time 4153.87 bg traffic 0
+Trigger 241 fired, 1 targets
+Flow Uec_12_16 flowId 250 uecSrc 249 starting at 4153.87
+Flow Uec_12_16 flowId 280 uecSrc 279 finished at 4321.77 flowSize 4000000 total packets 1027 RTS 48 total bytes 4000194 in_flight now -768 cwnd 9881 sim time 4321.77 bg traffic 0
+Trigger 271 fired, 1 targets
+Flow Uec_16_9 flowId 281 uecSrc 280 starting at 4321.77
+Flow Uec_11_22 flowId 126 uecSrc 125 finished at 2862.86 flowSize 4000000 total packets 1012 RTS 33 total bytes 4000194 in_flight now -256 cwnd 12244 sim time 5758.87 bg traffic 0
+Trigger 122 fired, 1 targets
+Flow Uec_22_6 flowId 127 uecSrc 126 starting at 5758.87
+Flow Uec_15_25 flowId 64 uecSrc 63 finished at 2898.5 flowSize 4000000 total packets 1016 RTS 37 total bytes 4000194 in_flight now -832 cwnd 12256 sim time 6060.59 bg traffic 0
+Trigger 62 fired, 1 targets
+Flow Uec_25_11 flowId 65 uecSrc 64 starting at 6060.59
+Flow Uec_19_12 flowId 219 uecSrc 218 finished at 3446.21 flowSize 4000000 total packets 1018 RTS 39 total bytes 4000194 in_flight now -896 cwnd 13661 sim time 6377.16 bg traffic 0
+Trigger 212 fired, 1 targets
+Flow Uec_12_16 flowId 220 uecSrc 219 starting at 6377.16
+Flow Uec_9_28 flowId 312 uecSrc 311 finished at 3026.07 flowSize 4000000 total packets 1014 RTS 35 total bytes 4000194 in_flight now -512 cwnd 9024 sim time 6545.01 bg traffic 0
+Trigger 302 fired, 1 targets
+Flow Uec_28_14 flowId 313 uecSrc 312 starting at 6545.01
+Flow Uec_20_26 flowId 436 uecSrc 435 finished at 3291.11 flowSize 4000000 total packets 1019 RTS 40 total bytes 4000194 in_flight now -448 cwnd 11340 sim time 6785.63 bg traffic 0
+Trigger 422 fired, 1 targets
+Flow Uec_26_5 flowId 437 uecSrc 436 starting at 6785.63
+Flow Uec_14_24 flowId 374 uecSrc 373 finished at 3734.58 flowSize 4000000 total packets 1021 RTS 42 total bytes 4000194 in_flight now -832 cwnd 11808 sim time 7126.93 bg traffic 0
+Trigger 362 fired, 1 targets
+Flow Uec_24_20 flowId 375 uecSrc 374 starting at 7126.93
+Flow Uec_22_6 flowId 157 uecSrc 156 finished at 3588.53 flowSize 4000000 total packets 1023 RTS 44 total bytes 4000194 in_flight now -704 cwnd 14921 sim time 7169.73 bg traffic 0
+Trigger 152 fired, 1 targets
+Flow Uec_6_19 flowId 158 uecSrc 157 starting at 7169.73
+Flow Uec_5_10 flowId 2 uecSrc 1 finished at 3801.64 flowSize 4000000 total packets 1018 RTS 39 total bytes 4000194 in_flight now -384 cwnd 9960 sim time 7274.31 bg traffic 0
+Trigger 2 fired, 1 targets
+Flow Uec_10_15 flowId 3 uecSrc 2 starting at 7274.31
+Flow Uec_12_16 flowId 250 uecSrc 249 finished at 3297.17 flowSize 4000000 total packets 1017 RTS 38 total bytes 4000194 in_flight now -704 cwnd 12256 sim time 7451.04 bg traffic 0
+Trigger 242 fired, 1 targets
+Flow Uec_16_9 flowId 251 uecSrc 250 starting at 7451.04
+Flow Uec_16_9 flowId 281 uecSrc 280 finished at 5034.11 flowSize 4000000 total packets 1037 RTS 58 total bytes 4000194 in_flight now -512 cwnd 10230 sim time 9355.88 bg traffic 0
+Trigger 272 fired, 1 targets
+Flow Uec_9_28 flowId 282 uecSrc 281 starting at 9355.88
+Flow Uec_26_5 flowId 467 uecSrc 466 finished at 5865.94 flowSize 4000000 total packets 1056 RTS 77 total bytes 4000194 in_flight now -1600 cwnd 8364 sim time 9497.8 bg traffic 0
+Trigger 452 fired, 1 targets
+Flow Uec_5_10 flowId 468 uecSrc 467 starting at 9497.8
+Flow Uec_10_15 flowId 33 uecSrc 32 finished at 5993.18 flowSize 4000000 total packets 1050 RTS 71 total bytes 4000194 in_flight now -1472 cwnd 8177 sim time 9560.23 bg traffic 0
+Trigger 32 fired, 1 targets
+Flow Uec_15_25 flowId 34 uecSrc 33 starting at 9560.23
+Flow Uec_6_19 flowId 188 uecSrc 187 finished at 5479.09 flowSize 4000000 total packets 1052 RTS 73 total bytes 4000194 in_flight now -1152 cwnd 18629 sim time 9595.42 bg traffic 0
+Trigger 182 fired, 1 targets
+Flow Uec_19_12 flowId 189 uecSrc 188 starting at 9595.42
+Flow Uec_24_20 flowId 405 uecSrc 404 finished at 6124.11 flowSize 4000000 total packets 1050 RTS 71 total bytes 4000194 in_flight now -1088 cwnd 14372 sim time 9812.03 bg traffic 0
+Trigger 392 fired, 1 targets
+Flow Uec_20_26 flowId 406 uecSrc 405 starting at 9812.03
+Flow Uec_25_11 flowId 95 uecSrc 94 finished at 6509.12 flowSize 4000000 total packets 1057 RTS 78 total bytes 4000194 in_flight now -1280 cwnd 9857 sim time 10065.8 bg traffic 0
+Trigger 92 fired, 1 targets
+Flow Uec_11_22 flowId 96 uecSrc 95 starting at 10065.8
+Flow Uec_28_14 flowId 343 uecSrc 342 finished at 6320.83 flowSize 4000000 total packets 1053 RTS 74 total bytes 4000194 in_flight now -960 cwnd 10241 sim time 10237.9 bg traffic 0
+Trigger 332 fired, 1 targets
+Flow Uec_14_24 flowId 344 uecSrc 343 starting at 10237.9
+Flow Uec_25_11 flowId 65 uecSrc 64 finished at 5973.11 flowSize 4000000 total packets 1049 RTS 70 total bytes 4000194 in_flight now -1408 cwnd 12684 sim time 12033.7 bg traffic 0
+Trigger 63 fired, 1 targets
+Flow Uec_11_22 flowId 66 uecSrc 65 starting at 12033.7
+Flow Uec_22_6 flowId 127 uecSrc 126 finished at 6310.61 flowSize 4000000 total packets 1066 RTS 87 total bytes 4000194 in_flight now -1792 cwnd 9226 sim time 12069.5 bg traffic 0
+Trigger 123 fired, 1 targets
+Flow Uec_6_19 flowId 128 uecSrc 127 starting at 12069.5
+Flow Uec_26_5 flowId 437 uecSrc 436 finished at 5299.8 flowSize 4000000 total packets 1046 RTS 67 total bytes 4000194 in_flight now -1152 cwnd 16880 sim time 12085.4 bg traffic 0
+Trigger 423 fired, 1 targets
+Flow Uec_5_10 flowId 438 uecSrc 437 starting at 12085.4
+Flow Uec_12_16 flowId 220 uecSrc 219 finished at 5980.43 flowSize 4000000 total packets 1053 RTS 74 total bytes 4000194 in_flight now -960 cwnd 15325 sim time 12357.6 bg traffic 0
+Trigger 213 fired, 1 targets
+Flow Uec_16_9 flowId 221 uecSrc 220 starting at 12357.6
+Flow Uec_10_15 flowId 3 uecSrc 2 finished at 5861.48 flowSize 4000000 total packets 1063 RTS 84 total bytes 4000194 in_flight now -1536 cwnd 9035 sim time 13135.8 bg traffic 0
+Trigger 3 fired, 1 targets
+Flow Uec_15_25 flowId 4 uecSrc 3 starting at 13135.8
+Flow Uec_24_20 flowId 375 uecSrc 374 finished at 6096.16 flowSize 4000000 total packets 1051 RTS 72 total bytes 4000194 in_flight now -1024 cwnd 11740 sim time 13223.1 bg traffic 0
+Trigger 363 fired, 1 targets
+Flow Uec_20_26 flowId 376 uecSrc 375 starting at 13223.1
+Flow Uec_28_14 flowId 313 uecSrc 312 finished at 6716.06 flowSize 4000000 total packets 1060 RTS 81 total bytes 4000194 in_flight now -1088 cwnd 8268 sim time 13261.1 bg traffic 0
+Trigger 303 fired, 1 targets
+Flow Uec_14_24 flowId 314 uecSrc 313 starting at 13261.1
+Flow Uec_16_9 flowId 251 uecSrc 250 finished at 5831.5 flowSize 4000000 total packets 1052 RTS 73 total bytes 4000194 in_flight now -1216 cwnd 8300 sim time 13282.5 bg traffic 0
+Trigger 243 fired, 1 targets
+Flow Uec_9_28 flowId 252 uecSrc 251 starting at 13282.5
+Flow Uec_6_19 flowId 158 uecSrc 157 finished at 6349.11 flowSize 4000000 total packets 1058 RTS 79 total bytes 4000194 in_flight now -1664 cwnd 8701 sim time 13518.8 bg traffic 0
+Trigger 153 fired, 1 targets
+Flow Uec_19_12 flowId 159 uecSrc 158 starting at 13518.8
+Flow Uec_19_12 flowId 189 uecSrc 188 finished at 5711.71 flowSize 4000000 total packets 1047 RTS 68 total bytes 4000194 in_flight now -1216 cwnd 13837 sim time 15307.1 bg traffic 0
+Trigger 183 fired, 1 targets
+Flow Uec_12_16 flowId 190 uecSrc 189 starting at 15307.1
+Flow Uec_5_10 flowId 468 uecSrc 467 finished at 5911.72 flowSize 4000000 total packets 1055 RTS 76 total bytes 4000194 in_flight now -896 cwnd 14959 sim time 15409.5 bg traffic 0
+Trigger 453 fired, 1 targets
+Flow Uec_10_15 flowId 469 uecSrc 468 starting at 15409.5
+Flow Uec_20_26 flowId 406 uecSrc 405 finished at 5645.91 flowSize 4000000 total packets 1041 RTS 62 total bytes 4000194 in_flight now -1024 cwnd 14961 sim time 15457.9 bg traffic 0
+Trigger 393 fired, 1 targets
+Flow Uec_26_5 flowId 407 uecSrc 406 starting at 15457.9
+Flow Uec_9_28 flowId 282 uecSrc 281 finished at 6273.19 flowSize 4000000 total packets 1053 RTS 74 total bytes 4000194 in_flight now -768 cwnd 11539 sim time 15629.1 bg traffic 0
+Trigger 273 fired, 1 targets
+Flow Uec_28_14 flowId 283 uecSrc 282 starting at 15629.1
+Flow Uec_15_25 flowId 34 uecSrc 33 finished at 6098.12 flowSize 4000000 total packets 1058 RTS 79 total bytes 4000194 in_flight now -1344 cwnd 20996 sim time 15658.3 bg traffic 0
+Trigger 33 fired, 1 targets
+Flow Uec_25_11 flowId 35 uecSrc 34 starting at 15658.3
+Flow Uec_11_22 flowId 96 uecSrc 95 finished at 5941.11 flowSize 4000000 total packets 1052 RTS 73 total bytes 4000194 in_flight now -1280 cwnd 9439 sim time 16006.9 bg traffic 0
+Trigger 93 fired, 1 targets
+Flow Uec_22_6 flowId 97 uecSrc 96 starting at 16006.9
+Flow Uec_14_24 flowId 344 uecSrc 343 finished at 6986.48 flowSize 4000000 total packets 1059 RTS 80 total bytes 4000194 in_flight now -1600 cwnd 22613 sim time 17224.4 bg traffic 0
+Trigger 333 fired, 1 targets
+Flow Uec_24_20 flowId 345 uecSrc 344 starting at 17224.4
+Flow Uec_6_19 flowId 128 uecSrc 127 finished at 5820.15 flowSize 4000000 total packets 1047 RTS 68 total bytes 4000194 in_flight now -832 cwnd 19926 sim time 17889.6 bg traffic 0
+Trigger 124 fired, 1 targets
+Flow Uec_19_12 flowId 129 uecSrc 128 starting at 17889.6
+Flow Uec_11_22 flowId 66 uecSrc 65 finished at 5939.11 flowSize 4000000 total packets 1053 RTS 74 total bytes 4000194 in_flight now -1280 cwnd 11336 sim time 17972.8 bg traffic 0
+Trigger 64 fired, 1 targets
+Flow Uec_22_6 flowId 67 uecSrc 66 starting at 17972.8
+Flow Uec_5_10 flowId 438 uecSrc 437 finished at 5899.41 flowSize 4000000 total packets 1047 RTS 68 total bytes 4000194 in_flight now -1024 cwnd 8013 sim time 17984.8 bg traffic 0
+Trigger 424 fired, 1 targets
+Flow Uec_10_15 flowId 439 uecSrc 438 starting at 17984.8
+Flow Uec_16_9 flowId 221 uecSrc 220 finished at 5744.19 flowSize 4000000 total packets 1048 RTS 69 total bytes 4000194 in_flight now -1152 cwnd 8268 sim time 18101.8 bg traffic 0
+Trigger 214 fired, 1 targets
+Flow Uec_9_28 flowId 222 uecSrc 221 starting at 18101.8
+Flow Uec_20_26 flowId 376 uecSrc 375 finished at 5568.68 flowSize 4000000 total packets 1042 RTS 63 total bytes 4000194 in_flight now -832 cwnd 17740 sim time 18791.8 bg traffic 0
+Trigger 364 fired, 1 targets
+Flow Uec_26_5 flowId 377 uecSrc 376 starting at 18791.8
+Flow Uec_9_28 flowId 252 uecSrc 251 finished at 5930.98 flowSize 4000000 total packets 1054 RTS 75 total bytes 4000194 in_flight now -1408 cwnd 8480 sim time 19213.5 bg traffic 0
+Trigger 244 fired, 1 targets
+Flow Uec_28_14 flowId 253 uecSrc 252 starting at 19213.5
+Flow Uec_14_24 flowId 314 uecSrc 313 finished at 5997.94 flowSize 4000000 total packets 1047 RTS 68 total bytes 4000194 in_flight now -768 cwnd 16197 sim time 19259 bg traffic 0
+Trigger 304 fired, 1 targets
+Flow Uec_24_20 flowId 315 uecSrc 314 starting at 19259
+Flow Uec_19_12 flowId 159 uecSrc 158 finished at 5797.65 flowSize 4000000 total packets 1046 RTS 67 total bytes 4000194 in_flight now -1280 cwnd 8300 sim time 19316.5 bg traffic 0
+Trigger 154 fired, 1 targets
+Flow Uec_12_16 flowId 160 uecSrc 159 starting at 19316.5
+Flow Uec_15_25 flowId 4 uecSrc 3 finished at 6212.06 flowSize 4000000 total packets 1058 RTS 79 total bytes 4000194 in_flight now -1344 cwnd 22902 sim time 19347.9 bg traffic 0
+Trigger 4 fired, 1 targets
+Flow Uec_25_11 flowId 5 uecSrc 4 starting at 19347.9
+Flow Uec_26_5 flowId 407 uecSrc 406 finished at 5255.04 flowSize 4000000 total packets 1041 RTS 62 total bytes 4000194 in_flight now -1216 cwnd 12035 sim time 20713 bg traffic 0
+Trigger 394 fired, 1 targets
+Flow Uec_5_10 flowId 408 uecSrc 407 starting at 20713
+Flow Uec_28_14 flowId 283 uecSrc 282 finished at 5805.97 flowSize 4000000 total packets 1047 RTS 68 total bytes 4000194 in_flight now -832 cwnd 8268 sim time 21435 bg traffic 0
+Trigger 274 fired, 1 targets
+Flow Uec_14_24 flowId 284 uecSrc 283 starting at 21435
+Flow Uec_12_16 flowId 190 uecSrc 189 finished at 6174.58 flowSize 4000000 total packets 1054 RTS 75 total bytes 4000194 in_flight now -1728 cwnd 8106 sim time 21481.7 bg traffic 0
+Trigger 184 fired, 1 targets
+Flow Uec_16_9 flowId 191 uecSrc 190 starting at 21481.7
+Flow Uec_25_11 flowId 35 uecSrc 34 finished at 6043.08 flowSize 4000000 total packets 1049 RTS 70 total bytes 4000194 in_flight now -1024 cwnd 14747 sim time 21701.4 bg traffic 0
+Trigger 34 fired, 1 targets
+Flow Uec_11_22 flowId 36 uecSrc 35 starting at 21701.4
+Flow Uec_10_15 flowId 469 uecSrc 468 finished at 6367.47 flowSize 4000000 total packets 1055 RTS 76 total bytes 4000194 in_flight now -1024 cwnd 8300 sim time 21777 bg traffic 0
+Trigger 454 fired, 1 targets
+Flow Uec_15_25 flowId 470 uecSrc 469 starting at 21777
+Flow Uec_22_6 flowId 97 uecSrc 96 finished at 6022.82 flowSize 4000000 total packets 1053 RTS 74 total bytes 4000194 in_flight now -1536 cwnd 8300 sim time 22029.7 bg traffic 0
+Trigger 94 fired, 1 targets
+Flow Uec_6_19 flowId 98 uecSrc 97 starting at 22029.7
+Flow Uec_24_20 flowId 345 uecSrc 344 finished at 5236.69 flowSize 4000000 total packets 1051 RTS 72 total bytes 4000194 in_flight now -1088 cwnd 15644 sim time 22461.1 bg traffic 0
+Trigger 334 fired, 1 targets
+Flow Uec_20_26 flowId 346 uecSrc 345 starting at 22461.1
+Flow Uec_9_28 flowId 222 uecSrc 221 finished at 5038.09 flowSize 4000000 total packets 1045 RTS 66 total bytes 4000194 in_flight now -832 cwnd 14881 sim time 23139.9 bg traffic 0
+Trigger 215 fired, 1 targets
+Flow Uec_28_14 flowId 223 uecSrc 222 starting at 23139.9
+Flow Uec_19_12 flowId 129 uecSrc 128 finished at 5545.96 flowSize 4000000 total packets 1041 RTS 62 total bytes 4000194 in_flight now -1088 cwnd 17111 sim time 23435.6 bg traffic 0
+Trigger 125 fired, 1 targets
+Flow Uec_12_16 flowId 130 uecSrc 129 starting at 23435.6
+Flow Uec_22_6 flowId 67 uecSrc 66 finished at 5754.82 flowSize 4000000 total packets 1049 RTS 70 total bytes 4000194 in_flight now -1024 cwnd 10069 sim time 23727.6 bg traffic 0
+Trigger 65 fired, 1 targets
+Flow Uec_6_19 flowId 68 uecSrc 67 starting at 23727.6
+Flow Uec_24_20 flowId 315 uecSrc 314 finished at 4916.78 flowSize 4000000 total packets 1042 RTS 63 total bytes 4000194 in_flight now -832 cwnd 16338 sim time 24175.8 bg traffic 0
+Trigger 305 fired, 1 targets
+Flow Uec_20_26 flowId 316 uecSrc 315 starting at 24175.8
+Flow Uec_26_5 flowId 377 uecSrc 376 finished at 5653.12 flowSize 4000000 total packets 1058 RTS 79 total bytes 4000194 in_flight now -1280 cwnd 23483 sim time 24444.9 bg traffic 0
+Trigger 365 fired, 1 targets
+Flow Uec_5_10 flowId 378 uecSrc 377 starting at 24444.9
+Flow Uec_10_15 flowId 439 uecSrc 438 finished at 6524.65 flowSize 4000000 total packets 1058 RTS 79 total bytes 4000194 in_flight now -1344 cwnd 16045 sim time 24509.5 bg traffic 0
+Trigger 425 fired, 1 targets
+Flow Uec_15_25 flowId 440 uecSrc 439 starting at 24509.5
+Flow Uec_12_16 flowId 160 uecSrc 159 finished at 5211.9 flowSize 4000000 total packets 1042 RTS 63 total bytes 4000194 in_flight now -960 cwnd 16173 sim time 24528.4 bg traffic 0
+Trigger 155 fired, 1 targets
+Flow Uec_16_9 flowId 161 uecSrc 160 starting at 24528.4
+Flow Uec_28_14 flowId 253 uecSrc 252 finished at 5930.23 flowSize 4000000 total packets 1051 RTS 72 total bytes 4000194 in_flight now -960 cwnd 11841 sim time 25143.8 bg traffic 0
+Trigger 245 fired, 1 targets
+Flow Uec_14_24 flowId 254 uecSrc 253 starting at 25143.8
+Flow Uec_25_11 flowId 5 uecSrc 4 finished at 5981.33 flowSize 4000000 total packets 1052 RTS 73 total bytes 4000194 in_flight now -1216 cwnd 13035 sim time 25329.2 bg traffic 0
+Trigger 5 fired, 1 targets
+Flow Uec_11_22 flowId 6 uecSrc 5 starting at 25329.2
+Flow Uec_5_10 flowId 408 uecSrc 407 finished at 5456.42 flowSize 4000000 total packets 1039 RTS 60 total bytes 4000194 in_flight now -640 cwnd 8808 sim time 26169.4 bg traffic 0
+Trigger 395 fired, 1 targets
+Flow Uec_10_15 flowId 409 uecSrc 408 starting at 26169.4
+Flow Uec_11_22 flowId 36 uecSrc 35 finished at 5862.97 flowSize 4000000 total packets 1051 RTS 72 total bytes 4000194 in_flight now -1280 cwnd 10209 sim time 27564.4 bg traffic 0
+Trigger 35 fired, 1 targets
+Flow Uec_22_6 flowId 37 uecSrc 36 starting at 27564.4
+Flow Uec_15_25 flowId 470 uecSrc 469 finished at 5854.37 flowSize 4000000 total packets 1049 RTS 70 total bytes 4000194 in_flight now -768 cwnd 9921 sim time 27631.4 bg traffic 0
+Trigger 455 fired, 1 targets
+Flow Uec_25_11 flowId 471 uecSrc 470 starting at 27631.4
+Flow Uec_20_26 flowId 346 uecSrc 345 finished at 5225.5 flowSize 4000000 total packets 1044 RTS 65 total bytes 4000194 in_flight now -1472 cwnd 8300 sim time 27686.6 bg traffic 0
+Trigger 335 fired, 1 targets
+Flow Uec_26_5 flowId 347 uecSrc 346 starting at 27686.6
+Flow Uec_14_24 flowId 284 uecSrc 283 finished at 6258.52 flowSize 4000000 total packets 1057 RTS 78 total bytes 4000194 in_flight now -1088 cwnd 10860 sim time 27693.6 bg traffic 0
+Trigger 275 fired, 1 targets
+Flow Uec_24_20 flowId 285 uecSrc 284 starting at 27693.6
+Flow Uec_6_19 flowId 98 uecSrc 97 finished at 5758.82 flowSize 4000000 total packets 1053 RTS 74 total bytes 4000194 in_flight now -1280 cwnd 19555 sim time 27788.6 bg traffic 0
+Trigger 95 fired, 1 targets
+Flow Uec_19_12 flowId 99 uecSrc 98 starting at 27788.6
+Flow Uec_16_9 flowId 191 uecSrc 190 finished at 7589.86 flowSize 4000000 total packets 1066 RTS 87 total bytes 4000194 in_flight now -1152 cwnd 11875 sim time 29071.6 bg traffic 0
+Trigger 185 fired, 1 targets
+Flow Uec_9_28 flowId 192 uecSrc 191 starting at 29071.6
+Flow Uec_12_16 flowId 130 uecSrc 129 finished at 5772.36 flowSize 4000000 total packets 1052 RTS 73 total bytes 4000194 in_flight now -704 cwnd 15124 sim time 29208 bg traffic 0
+Trigger 126 fired, 1 targets
+Flow Uec_16_9 flowId 131 uecSrc 130 starting at 29208
+Flow Uec_20_26 flowId 316 uecSrc 315 finished at 5551.93 flowSize 4000000 total packets 1051 RTS 72 total bytes 4000194 in_flight now -1088 cwnd 20532 sim time 29727.7 bg traffic 0
+Trigger 306 fired, 1 targets
+Flow Uec_26_5 flowId 317 uecSrc 316 starting at 29727.7
+Flow Uec_28_14 flowId 223 uecSrc 222 finished at 6791.8 flowSize 4000000 total packets 1059 RTS 80 total bytes 4000194 in_flight now -1152 cwnd 13736 sim time 29931.7 bg traffic 0
+Trigger 216 fired, 1 targets
+Flow Uec_14_24 flowId 224 uecSrc 223 starting at 29931.7
+Flow Uec_6_19 flowId 68 uecSrc 67 finished at 6490.58 flowSize 4000000 total packets 1052 RTS 73 total bytes 4000194 in_flight now -768 cwnd 20399 sim time 30218.2 bg traffic 0
+Trigger 66 fired, 1 targets
+Flow Uec_19_12 flowId 69 uecSrc 68 starting at 30218.2
+Flow Uec_16_9 flowId 161 uecSrc 160 finished at 5844.87 flowSize 4000000 total packets 1059 RTS 80 total bytes 4000194 in_flight now -1152 cwnd 13511 sim time 30373.3 bg traffic 0
+Trigger 156 fired, 1 targets
+Flow Uec_9_28 flowId 162 uecSrc 161 starting at 30373.3
+Flow Uec_15_25 flowId 440 uecSrc 439 finished at 5944.83 flowSize 4000000 total packets 1053 RTS 74 total bytes 4000194 in_flight now -1024 cwnd 14752 sim time 30454.3 bg traffic 0
+Trigger 426 fired, 1 targets
+Flow Uec_25_11 flowId 441 uecSrc 440 starting at 30454.3
+Flow Uec_11_22 flowId 6 uecSrc 5 finished at 5278.21 flowSize 4000000 total packets 1045 RTS 66 total bytes 4000194 in_flight now -704 cwnd 17616 sim time 30607.4 bg traffic 0
+Trigger 6 fired, 1 targets
+Flow Uec_22_6 flowId 7 uecSrc 6 starting at 30607.4
+Flow Uec_14_24 flowId 254 uecSrc 253 finished at 5687.33 flowSize 4000000 total packets 1042 RTS 63 total bytes 4000194 in_flight now -448 cwnd 8530 sim time 30831.1 bg traffic 0
+Trigger 246 fired, 1 targets
+Flow Uec_24_20 flowId 255 uecSrc 254 starting at 30831.1
+Flow Uec_5_10 flowId 378 uecSrc 377 finished at 6839.33 flowSize 4000000 total packets 1058 RTS 79 total bytes 4000194 in_flight now -896 cwnd 8172 sim time 31284.2 bg traffic 0
+Trigger 366 fired, 1 targets
+Flow Uec_10_15 flowId 379 uecSrc 378 starting at 31284.2
+Flow Uec_10_15 flowId 409 uecSrc 408 finished at 6469.7 flowSize 4000000 total packets 1064 RTS 85 total bytes 4000194 in_flight now -1024 cwnd 10790 sim time 32639.1 bg traffic 0
+Trigger 396 fired, 1 targets
+Flow Uec_15_25 flowId 410 uecSrc 409 starting at 32639.1
+Flow Uec_24_20 flowId 285 uecSrc 284 finished at 5073.75 flowSize 4000000 total packets 1047 RTS 68 total bytes 4000194 in_flight now -1088 cwnd 11296 sim time 32767.3 bg traffic 0
+Trigger 276 fired, 1 targets
+Flow Uec_20_26 flowId 286 uecSrc 285 starting at 32767.3
+Flow Uec_25_11 flowId 471 uecSrc 470 finished at 5261.85 flowSize 4000000 total packets 1047 RTS 68 total bytes 4000194 in_flight now -896 cwnd 9269 sim time 32893.2 bg traffic 0
+Trigger 456 fired, 1 targets
+Flow Uec_11_22 flowId 472 uecSrc 471 starting at 32893.2
+Flow Uec_26_5 flowId 347 uecSrc 346 finished at 5570.59 flowSize 4000000 total packets 1056 RTS 77 total bytes 4000194 in_flight now -1344 cwnd 15087 sim time 33257.2 bg traffic 0
+Trigger 336 fired, 1 targets
+Flow Uec_5_10 flowId 348 uecSrc 347 starting at 33257.2
+Flow Uec_22_6 flowId 37 uecSrc 36 finished at 6083.39 flowSize 4000000 total packets 1051 RTS 72 total bytes 4000194 in_flight now -1280 cwnd 9953 sim time 33647.8 bg traffic 0
+Trigger 36 fired, 1 targets
+Flow Uec_6_19 flowId 38 uecSrc 37 starting at 33647.8
+Flow Uec_19_12 flowId 99 uecSrc 98 finished at 6164.84 flowSize 4000000 total packets 1054 RTS 75 total bytes 4000194 in_flight now -1152 cwnd 13228 sim time 33953.4 bg traffic 0
+Trigger 96 fired, 1 targets
+Flow Uec_12_16 flowId 100 uecSrc 99 starting at 33953.4
+Flow Uec_9_28 flowId 192 uecSrc 191 finished at 5946.62 flowSize 4000000 total packets 1051 RTS 72 total bytes 4000194 in_flight now -704 cwnd 16321 sim time 35018.2 bg traffic 0
+Trigger 186 fired, 1 targets
+Flow Uec_28_14 flowId 193 uecSrc 192 starting at 35018.2
+Flow Uec_16_9 flowId 131 uecSrc 130 finished at 6365.46 flowSize 4000000 total packets 1049 RTS 70 total bytes 4000194 in_flight now -1344 cwnd 21147 sim time 35573.4 bg traffic 0
+Trigger 127 fired, 1 targets
+Flow Uec_9_28 flowId 132 uecSrc 131 starting at 35573.4
+Flow Uec_26_5 flowId 317 uecSrc 316 finished at 6102.31 flowSize 4000000 total packets 1052 RTS 73 total bytes 4000194 in_flight now -1088 cwnd 8930 sim time 35830 bg traffic 0
+Trigger 307 fired, 1 targets
+Flow Uec_5_10 flowId 318 uecSrc 317 starting at 35830
+Flow Uec_19_12 flowId 69 uecSrc 68 finished at 5839.38 flowSize 4000000 total packets 1056 RTS 77 total bytes 4000194 in_flight now -1344 cwnd 19495 sim time 36057.6 bg traffic 0
+Trigger 67 fired, 1 targets
+Flow Uec_12_16 flowId 70 uecSrc 69 starting at 36057.6
+Flow Uec_10_15 flowId 379 uecSrc 378 finished at 4909.91 flowSize 4000000 total packets 1041 RTS 62 total bytes 4000194 in_flight now -1280 cwnd 13419 sim time 36194.1 bg traffic 0
+Trigger 367 fired, 1 targets
+Flow Uec_15_25 flowId 380 uecSrc 379 starting at 36194.1
+Flow Uec_14_24 flowId 224 uecSrc 223 finished at 6415.59 flowSize 4000000 total packets 1052 RTS 73 total bytes 4000194 in_flight now -1024 cwnd 13942 sim time 36347.3 bg traffic 0
+Trigger 217 fired, 1 targets
+Flow Uec_24_20 flowId 225 uecSrc 224 starting at 36347.3
+Flow Uec_9_28 flowId 162 uecSrc 161 finished at 6181.91 flowSize 4000000 total packets 1055 RTS 76 total bytes 4000194 in_flight now -960 cwnd 15831 sim time 36555.2 bg traffic 0
+Trigger 157 fired, 1 targets
+Flow Uec_28_14 flowId 163 uecSrc 162 starting at 36555.2
+Flow Uec_25_11 flowId 441 uecSrc 440 finished at 6163.81 flowSize 4000000 total packets 1058 RTS 79 total bytes 4000194 in_flight now -1408 cwnd 10517 sim time 36618.1 bg traffic 0
+Trigger 427 fired, 1 targets
+Flow Uec_11_22 flowId 442 uecSrc 441 starting at 36618.1
+Flow Uec_22_6 flowId 7 uecSrc 6 finished at 6206.7 flowSize 4000000 total packets 1054 RTS 75 total bytes 4000194 in_flight now -1088 cwnd 8300 sim time 36814.1 bg traffic 0
+Trigger 7 fired, 1 targets
+Flow Uec_6_19 flowId 8 uecSrc 7 starting at 36814.1
+Flow Uec_24_20 flowId 255 uecSrc 254 finished at 6470.79 flowSize 4000000 total packets 1059 RTS 80 total bytes 4000194 in_flight now -1088 cwnd 22011 sim time 37301.9 bg traffic 0
+Trigger 247 fired, 1 targets
+Flow Uec_20_26 flowId 256 uecSrc 255 starting at 37301.9
+Flow Uec_11_22 flowId 472 uecSrc 471 finished at 5529.78 flowSize 4000000 total packets 1049 RTS 70 total bytes 4000194 in_flight now -960 cwnd 11606 sim time 38423 bg traffic 0
+Trigger 457 fired, 1 targets
+Flow Uec_22_6 flowId 473 uecSrc 472 starting at 38423
+Flow Uec_20_26 flowId 286 uecSrc 285 finished at 5703.98 flowSize 4000000 total packets 1051 RTS 72 total bytes 4000194 in_flight now -832 cwnd 15389 sim time 38471.3 bg traffic 0
+Trigger 277 fired, 1 targets
+Flow Uec_26_5 flowId 287 uecSrc 286 starting at 38471.3
+Flow Uec_6_19 flowId 38 uecSrc 37 finished at 5090.61 flowSize 4000000 total packets 1042 RTS 63 total bytes 4000194 in_flight now -960 cwnd 15332 sim time 38738.4 bg traffic 0
+Trigger 37 fired, 1 targets
+Flow Uec_19_12 flowId 39 uecSrc 38 starting at 38738.4
+Flow Uec_15_25 flowId 410 uecSrc 409 finished at 6181.42 flowSize 4000000 total packets 1057 RTS 78 total bytes 4000194 in_flight now -1152 cwnd 11037 sim time 38820.5 bg traffic 0
+Trigger 397 fired, 1 targets
+Flow Uec_25_11 flowId 411 uecSrc 410 starting at 38820.5
+Flow Uec_5_10 flowId 348 uecSrc 347 finished at 5780.26 flowSize 4000000 total packets 1051 RTS 72 total bytes 4000194 in_flight now -1024 cwnd 19481 sim time 39037.4 bg traffic 0
+Trigger 337 fired, 1 targets
+Flow Uec_10_15 flowId 349 uecSrc 348 starting at 39037.4
+Flow Uec_12_16 flowId 100 uecSrc 99 finished at 6674.38 flowSize 4000000 total packets 1054 RTS 75 total bytes 4000194 in_flight now -1344 cwnd 8140 sim time 40627.8 bg traffic 0
+Trigger 97 fired, 1 targets
+Flow Uec_16_9 flowId 101 uecSrc 100 starting at 40627.8
+Flow Uec_28_14 flowId 193 uecSrc 192 finished at 5907 flowSize 4000000 total packets 1048 RTS 69 total bytes 4000194 in_flight now -1280 cwnd 8300 sim time 40925.2 bg traffic 0
+Trigger 187 fired, 1 targets
+Flow Uec_14_24 flowId 194 uecSrc 193 starting at 40925.2
+Flow Uec_5_10 flowId 318 uecSrc 317 finished at 5235.2 flowSize 4000000 total packets 1044 RTS 65 total bytes 4000194 in_flight now -704 cwnd 16097 sim time 41065.2 bg traffic 0
+Trigger 308 fired, 1 targets
+Flow Uec_10_15 flowId 319 uecSrc 318 starting at 41065.2
+Flow Uec_9_28 flowId 132 uecSrc 131 finished at 5819.02 flowSize 4000000 total packets 1053 RTS 74 total bytes 4000194 in_flight now -1472 cwnd 17884 sim time 41392.4 bg traffic 0
+Trigger 128 fired, 1 targets
+Flow Uec_28_14 flowId 133 uecSrc 132 starting at 41392.4
+Flow Uec_11_22 flowId 442 uecSrc 441 finished at 4884.82 flowSize 4000000 total packets 1043 RTS 64 total bytes 4000194 in_flight now -960 cwnd 8449 sim time 41503 bg traffic 0
+Trigger 428 fired, 1 targets
+Flow Uec_22_6 flowId 443 uecSrc 442 starting at 41503
+Flow Uec_15_25 flowId 380 uecSrc 379 finished at 5313.7 flowSize 4000000 total packets 1045 RTS 66 total bytes 4000194 in_flight now -704 cwnd 12678 sim time 41507.8 bg traffic 0
+Trigger 368 fired, 1 targets
+Flow Uec_25_11 flowId 381 uecSrc 380 starting at 41507.8
+Flow Uec_12_16 flowId 70 uecSrc 69 finished at 6046.01 flowSize 4000000 total packets 1052 RTS 73 total bytes 4000194 in_flight now -1472 cwnd 12017 sim time 42103.6 bg traffic 0
+Trigger 68 fired, 1 targets
+Flow Uec_16_9 flowId 71 uecSrc 70 starting at 42103.6
+Flow Uec_20_26 flowId 256 uecSrc 255 finished at 4877.74 flowSize 4000000 total packets 1042 RTS 63 total bytes 4000194 in_flight now -1408 cwnd 12653 sim time 42179.6 bg traffic 0
+Trigger 248 fired, 1 targets
+Flow Uec_26_5 flowId 257 uecSrc 256 starting at 42179.6
+Flow Uec_24_20 flowId 225 uecSrc 224 finished at 6257.97 flowSize 4000000 total packets 1049 RTS 70 total bytes 4000194 in_flight now -1280 cwnd 15055 sim time 42605.2 bg traffic 0
+Trigger 218 fired, 1 targets
+Flow Uec_20_26 flowId 226 uecSrc 225 starting at 42605.2
+Flow Uec_6_19 flowId 8 uecSrc 7 finished at 5937.83 flowSize 4000000 total packets 1052 RTS 73 total bytes 4000194 in_flight now -1024 cwnd 18613 sim time 42751.9 bg traffic 0
+Trigger 8 fired, 1 targets
+Flow Uec_19_12 flowId 9 uecSrc 8 starting at 42751.9
+Flow Uec_28_14 flowId 163 uecSrc 162 finished at 6208.48 flowSize 4000000 total packets 1056 RTS 77 total bytes 4000194 in_flight now -1280 cwnd 8300 sim time 42763.6 bg traffic 0
+Trigger 158 fired, 1 targets
+Flow Uec_14_24 flowId 164 uecSrc 163 starting at 42763.6
+Flow Uec_10_15 flowId 349 uecSrc 348 finished at 4931.95 flowSize 4000000 total packets 1046 RTS 67 total bytes 4000194 in_flight now -1408 cwnd 8300 sim time 43969.4 bg traffic 0
+Trigger 338 fired, 1 targets
+Flow Uec_15_25 flowId 350 uecSrc 349 starting at 43969.4
+Flow Uec_26_5 flowId 287 uecSrc 286 finished at 5569.17 flowSize 4000000 total packets 1052 RTS 73 total bytes 4000194 in_flight now -960 cwnd 8300 sim time 44040.5 bg traffic 0
+Trigger 278 fired, 1 targets
+Flow Uec_5_10 flowId 288 uecSrc 287 starting at 44040.5
+Flow Uec_22_6 flowId 473 uecSrc 472 finished at 5780.06 flowSize 4000000 total packets 1051 RTS 72 total bytes 4000194 in_flight now -1280 cwnd 16282 sim time 44203.1 bg traffic 0
+Trigger 458 fired, 1 targets
+Flow Uec_6_19 flowId 474 uecSrc 473 starting at 44203.1
+Flow Uec_19_12 flowId 39 uecSrc 38 finished at 5855.64 flowSize 4000000 total packets 1046 RTS 67 total bytes 4000194 in_flight now -1024 cwnd 9279 sim time 44594 bg traffic 0
+Trigger 38 fired, 1 targets
+Flow Uec_12_16 flowId 40 uecSrc 39 starting at 44594
+Flow Uec_25_11 flowId 411 uecSrc 410 finished at 5953.35 flowSize 4000000 total packets 1050 RTS 71 total bytes 4000194 in_flight now -1152 cwnd 10516 sim time 44773.9 bg traffic 0
+Trigger 398 fired, 1 targets
+Flow Uec_11_22 flowId 412 uecSrc 411 starting at 44773.9
+Flow Uec_14_24 flowId 194 uecSrc 193 finished at 5111.94 flowSize 4000000 total packets 1046 RTS 67 total bytes 4000194 in_flight now -1408 cwnd 17918 sim time 46037.1 bg traffic 0
+Trigger 188 fired, 1 targets
+Flow Uec_24_20 flowId 195 uecSrc 194 starting at 46037.1
+Flow Uec_16_9 flowId 101 uecSrc 100 finished at 6054.57 flowSize 4000000 total packets 1046 RTS 67 total bytes 4000194 in_flight now -1152 cwnd 21745 sim time 46682.4 bg traffic 0
+Trigger 98 fired, 1 targets
+Flow Uec_9_28 flowId 102 uecSrc 101 starting at 46682.4
+Flow Uec_25_11 flowId 381 uecSrc 380 finished at 5606.31 flowSize 4000000 total packets 1050 RTS 71 total bytes 4000194 in_flight now -1408 cwnd 10284 sim time 47114.1 bg traffic 0
+Trigger 369 fired, 1 targets
+Flow Uec_11_22 flowId 382 uecSrc 381 starting at 47114.1
+Flow Uec_10_15 flowId 319 uecSrc 318 finished at 6105.6 flowSize 4000000 total packets 1048 RTS 69 total bytes 4000194 in_flight now -1152 cwnd 13602 sim time 47170.8 bg traffic 0
+Trigger 309 fired, 1 targets
+Flow Uec_15_25 flowId 320 uecSrc 319 starting at 47170.8
+Flow Uec_22_6 flowId 443 uecSrc 442 finished at 6112.84 flowSize 4000000 total packets 1054 RTS 75 total bytes 4000194 in_flight now -1280 cwnd 17422 sim time 47615.8 bg traffic 0
+Trigger 429 fired, 1 targets
+Flow Uec_6_19 flowId 444 uecSrc 443 starting at 47615.8
+Flow Uec_14_24 flowId 164 uecSrc 163 finished at 5008.12 flowSize 4000000 total packets 1042 RTS 63 total bytes 4000194 in_flight now -896 cwnd 13751 sim time 47771.7 bg traffic 0
+Trigger 159 fired, 1 targets
+Flow Uec_24_20 flowId 165 uecSrc 164 starting at 47771.7
+Flow Uec_28_14 flowId 133 uecSrc 132 finished at 6395.61 flowSize 4000000 total packets 1056 RTS 77 total bytes 4000194 in_flight now -1728 cwnd 8332 sim time 47788 bg traffic 0
+Trigger 129 fired, 1 targets
+Flow Uec_14_24 flowId 134 uecSrc 133 starting at 47788
+Flow Uec_16_9 flowId 71 uecSrc 70 finished at 5789.82 flowSize 4000000 total packets 1052 RTS 73 total bytes 4000194 in_flight now -1216 cwnd 10899 sim time 47893.4 bg traffic 0
+Trigger 69 fired, 1 targets
+Flow Uec_9_28 flowId 72 uecSrc 71 starting at 47893.4
+Flow Uec_20_26 flowId 226 uecSrc 225 finished at 5603.29 flowSize 4000000 total packets 1051 RTS 72 total bytes 4000194 in_flight now -1216 cwnd 11477 sim time 48208.5 bg traffic 0
+Trigger 219 fired, 1 targets
+Flow Uec_26_5 flowId 227 uecSrc 226 starting at 48208.5
+Flow Uec_26_5 flowId 257 uecSrc 256 finished at 6071.23 flowSize 4000000 total packets 1051 RTS 72 total bytes 4000194 in_flight now -1280 cwnd 17307 sim time 48250.8 bg traffic 0
+Trigger 249 fired, 1 targets
+Flow Uec_5_10 flowId 258 uecSrc 257 starting at 48250.8
+Flow Uec_19_12 flowId 9 uecSrc 8 finished at 6290.82 flowSize 4000000 total packets 1052 RTS 73 total bytes 4000194 in_flight now -960 cwnd 17099 sim time 49042.7 bg traffic 0
+Trigger 9 fired, 1 targets
+Flow Uec_12_16 flowId 10 uecSrc 9 starting at 49042.7
+Flow Uec_15_25 flowId 350 uecSrc 349 finished at 5318.54 flowSize 4000000 total packets 1051 RTS 72 total bytes 4000194 in_flight now -960 cwnd 16103 sim time 49287.9 bg traffic 0
+Trigger 339 fired, 1 targets
+Flow Uec_25_11 flowId 351 uecSrc 350 starting at 49287.9
+.Flow Uec_6_19 flowId 474 uecSrc 473 finished at 5896.06 flowSize 4000000 total packets 1052 RTS 73 total bytes 4000194 in_flight now -1664 cwnd 22392 sim time 50099.1 bg traffic 0
+Trigger 459 fired, 1 targets
+Flow Uec_19_12 flowId 475 uecSrc 474 starting at 50099.1
+Flow Uec_5_10 flowId 288 uecSrc 287 finished at 6441.92 flowSize 4000000 total packets 1060 RTS 81 total bytes 4000194 in_flight now -1728 cwnd 13400 sim time 50482.4 bg traffic 0
+Trigger 279 fired, 1 targets
+Flow Uec_10_15 flowId 289 uecSrc 288 starting at 50482.4
+Flow Uec_12_16 flowId 40 uecSrc 39 finished at 5936.71 flowSize 4000000 total packets 1059 RTS 80 total bytes 4000194 in_flight now -960 cwnd 15886 sim time 50530.7 bg traffic 0
+Trigger 39 fired, 1 targets
+Flow Uec_16_9 flowId 41 uecSrc 40 starting at 50530.7
+Flow Uec_11_22 flowId 412 uecSrc 411 finished at 6532.63 flowSize 4000000 total packets 1056 RTS 77 total bytes 4000194 in_flight now -1216 cwnd 15078 sim time 51306.5 bg traffic 0
+Trigger 399 fired, 1 targets
+Flow Uec_22_6 flowId 413 uecSrc 412 starting at 51306.5
+Flow Uec_9_28 flowId 102 uecSrc 101 finished at 5017.35 flowSize 4000000 total packets 1048 RTS 69 total bytes 4000194 in_flight now -832 cwnd 8437 sim time 51699.7 bg traffic 0
+Trigger 99 fired, 1 targets
+Flow Uec_28_14 flowId 103 uecSrc 102 starting at 51699.7
+Flow Uec_24_20 flowId 195 uecSrc 194 finished at 5893.82 flowSize 4000000 total packets 1051 RTS 72 total bytes 4000194 in_flight now -960 cwnd 16171 sim time 51930.9 bg traffic 0
+Trigger 189 fired, 1 targets
+Flow Uec_20_26 flowId 196 uecSrc 195 starting at 51930.9
+Flow Uec_6_19 flowId 444 uecSrc 443 finished at 5411.98 flowSize 4000000 total packets 1049 RTS 70 total bytes 4000194 in_flight now -1280 cwnd 19323 sim time 53027.8 bg traffic 0
+Trigger 430 fired, 1 targets
+Flow Uec_19_12 flowId 445 uecSrc 444 starting at 53027.8
+Flow Uec_11_22 flowId 382 uecSrc 381 finished at 6102.01 flowSize 4000000 total packets 1056 RTS 77 total bytes 4000194 in_flight now -1216 cwnd 8011 sim time 53216.1 bg traffic 0
+Trigger 370 fired, 1 targets
+Flow Uec_22_6 flowId 383 uecSrc 382 starting at 53216.1
+Flow Uec_24_20 flowId 165 uecSrc 164 finished at 5769.2 flowSize 4000000 total packets 1050 RTS 71 total bytes 4000194 in_flight now -640 cwnd 12858 sim time 53541 bg traffic 0
+Trigger 160 fired, 1 targets
+Flow Uec_20_26 flowId 166 uecSrc 165 starting at 53541
+Flow Uec_14_24 flowId 134 uecSrc 133 finished at 5853.91 flowSize 4000000 total packets 1057 RTS 78 total bytes 4000194 in_flight now -1664 cwnd 8300 sim time 53642 bg traffic 0
+Trigger 130 fired, 1 targets
+Flow Uec_24_20 flowId 135 uecSrc 134 starting at 53642
+Flow Uec_15_25 flowId 320 uecSrc 319 finished at 6482.33 flowSize 4000000 total packets 1053 RTS 74 total bytes 4000194 in_flight now -1728 cwnd 8695 sim time 53653.2 bg traffic 0
+Trigger 310 fired, 1 targets
+Flow Uec_25_11 flowId 321 uecSrc 320 starting at 53653.2
+Flow Uec_26_5 flowId 227 uecSrc 226 finished at 5546.93 flowSize 4000000 total packets 1049 RTS 70 total bytes 4000194 in_flight now -1088 cwnd 8300 sim time 53755.5 bg traffic 0
+Trigger 220 fired, 1 targets
+Flow Uec_5_10 flowId 228 uecSrc 227 starting at 53755.5
+Flow Uec_5_10 flowId 258 uecSrc 257 finished at 5596.06 flowSize 4000000 total packets 1042 RTS 63 total bytes 4000194 in_flight now -1088 cwnd 17165 sim time 53846.9 bg traffic 0
+Trigger 250 fired, 1 targets
+Flow Uec_10_15 flowId 259 uecSrc 258 starting at 53846.9
+Flow Uec_9_28 flowId 72 uecSrc 71 finished at 6546.5 flowSize 4000000 total packets 1061 RTS 82 total bytes 4000194 in_flight now -1344 cwnd 12057 sim time 54439.9 bg traffic 0
+Trigger 70 fired, 1 targets
+Flow Uec_28_14 flowId 73 uecSrc 72 starting at 54439.9
+Flow Uec_25_11 flowId 351 uecSrc 350 finished at 5545.28 flowSize 4000000 total packets 1041 RTS 62 total bytes 4000194 in_flight now -640 cwnd 16738 sim time 54833.2 bg traffic 0
+Trigger 340 fired, 1 targets
+Flow Uec_11_22 flowId 352 uecSrc 351 starting at 54833.2
+Flow Uec_10_15 flowId 289 uecSrc 288 finished at 5359.94 flowSize 4000000 total packets 1050 RTS 71 total bytes 4000194 in_flight now -1216 cwnd 13768 sim time 55842.3 bg traffic 0
+Trigger 280 fired, 1 targets
+Flow Uec_15_25 flowId 290 uecSrc 289 starting at 55842.3
+Flow Uec_12_16 flowId 10 uecSrc 9 finished at 6841.81 flowSize 4000000 total packets 1059 RTS 80 total bytes 4000194 in_flight now -1216 cwnd 8513 sim time 55884.5 bg traffic 0
+Trigger 10 fired, 1 targets
+Flow Uec_16_9 flowId 11 uecSrc 10 starting at 55884.5
+Flow Uec_19_12 flowId 475 uecSrc 474 finished at 6114.18 flowSize 4000000 total packets 1049 RTS 70 total bytes 4000194 in_flight now -1216 cwnd 12035 sim time 56213.3 bg traffic 0
+Trigger 460 fired, 1 targets
+Flow Uec_12_16 flowId 476 uecSrc 475 starting at 56213.3
+Flow Uec_16_9 flowId 41 uecSrc 40 finished at 5686.4 flowSize 4000000 total packets 1051 RTS 72 total bytes 4000194 in_flight now -1216 cwnd 16493 sim time 56217.1 bg traffic 0
+Trigger 40 fired, 1 targets
+Flow Uec_9_28 flowId 42 uecSrc 41 starting at 56217.1
+Flow Uec_22_6 flowId 413 uecSrc 412 finished at 5354.71 flowSize 4000000 total packets 1048 RTS 69 total bytes 4000194 in_flight now -960 cwnd 16486 sim time 56661.2 bg traffic 0
+Trigger 400 fired, 1 targets
+Flow Uec_6_19 flowId 414 uecSrc 413 starting at 56661.2
+Flow Uec_28_14 flowId 103 uecSrc 102 finished at 5502.57 flowSize 4000000 total packets 1050 RTS 71 total bytes 4000194 in_flight now -1216 cwnd 12755 sim time 57202.3 bg traffic 0
+Trigger 100 fired, 1 targets
+Flow Uec_14_24 flowId 104 uecSrc 103 starting at 57202.3
+Flow Uec_20_26 flowId 196 uecSrc 195 finished at 6104.31 flowSize 4000000 total packets 1055 RTS 76 total bytes 4000194 in_flight now -960 cwnd 11024 sim time 58035.3 bg traffic 0
+Trigger 190 fired, 1 targets
+Flow Uec_26_5 flowId 197 uecSrc 196 starting at 58035.3
+Flow Uec_5_10 flowId 228 uecSrc 227 finished at 4970.31 flowSize 4000000 total packets 1037 RTS 58 total bytes 4000194 in_flight now -832 cwnd 10407 sim time 58725.8 bg traffic 0
+Trigger 221 fired, 1 targets
+Flow Uec_10_15 flowId 229 uecSrc 228 starting at 58725.8
+Flow Uec_20_26 flowId 166 uecSrc 165 finished at 5528.58 flowSize 4000000 total packets 1048 RTS 69 total bytes 4000194 in_flight now -1472 cwnd 8301 sim time 59069.5 bg traffic 0
+Trigger 161 fired, 1 targets
+Flow Uec_26_5 flowId 167 uecSrc 166 starting at 59069.5
+Flow Uec_19_12 flowId 445 uecSrc 444 finished at 6065.98 flowSize 4000000 total packets 1047 RTS 68 total bytes 4000194 in_flight now -1024 cwnd 8655 sim time 59093.8 bg traffic 0
+Trigger 431 fired, 1 targets
+Flow Uec_12_16 flowId 446 uecSrc 445 starting at 59093.8
+Flow Uec_22_6 flowId 383 uecSrc 382 finished at 6016.25 flowSize 4000000 total packets 1050 RTS 71 total bytes 4000194 in_flight now -1280 cwnd 8106 sim time 59232.4 bg traffic 0
+Trigger 371 fired, 1 targets
+Flow Uec_6_19 flowId 384 uecSrc 383 starting at 59232.4
+Flow Uec_24_20 flowId 135 uecSrc 134 finished at 5711.55 flowSize 4000000 total packets 1050 RTS 71 total bytes 4000194 in_flight now -1408 cwnd 13768 sim time 59353.5 bg traffic 0
+Trigger 131 fired, 1 targets
+Flow Uec_20_26 flowId 136 uecSrc 135 starting at 59353.5
+Flow Uec_25_11 flowId 321 uecSrc 320 finished at 5752.3 flowSize 4000000 total packets 1055 RTS 76 total bytes 4000194 in_flight now -832 cwnd 18936 sim time 59405.4 bg traffic 0
+Trigger 311 fired, 1 targets
+Flow Uec_11_22 flowId 322 uecSrc 321 starting at 59405.4
+Flow Uec_10_15 flowId 259 uecSrc 258 finished at 6324.22 flowSize 4000000 total packets 1062 RTS 83 total bytes 4000194 in_flight now -1344 cwnd 8106 sim time 60171.1 bg traffic 0
+Trigger 251 fired, 1 targets
+Flow Uec_15_25 flowId 260 uecSrc 259 starting at 60171.1
+Flow Uec_28_14 flowId 73 uecSrc 72 finished at 5837.42 flowSize 4000000 total packets 1044 RTS 65 total bytes 4000194 in_flight now -768 cwnd 23111 sim time 60277.3 bg traffic 0
+Trigger 71 fired, 1 targets
+Flow Uec_14_24 flowId 74 uecSrc 73 starting at 60277.3
+Flow Uec_11_22 flowId 352 uecSrc 351 finished at 5955.26 flowSize 4000000 total packets 1054 RTS 75 total bytes 4000194 in_flight now -1216 cwnd 17348 sim time 60788.5 bg traffic 0
+Trigger 341 fired, 1 targets
+Flow Uec_22_6 flowId 353 uecSrc 352 starting at 60788.5
+Flow Uec_9_28 flowId 42 uecSrc 41 finished at 5721.98 flowSize 4000000 total packets 1052 RTS 73 total bytes 4000194 in_flight now -960 cwnd 26602 sim time 61939.1 bg traffic 0
+Trigger 41 fired, 1 targets
+Flow Uec_28_14 flowId 43 uecSrc 42 starting at 61939.1
+Flow Uec_16_9 flowId 11 uecSrc 10 finished at 6157.23 flowSize 4000000 total packets 1051 RTS 72 total bytes 4000194 in_flight now -1024 cwnd 22055 sim time 62041.8 bg traffic 0
+Trigger 11 fired, 1 targets
+Flow Uec_9_28 flowId 12 uecSrc 11 starting at 62041.8
+Flow Uec_12_16 flowId 476 uecSrc 475 finished at 5913.96 flowSize 4000000 total packets 1054 RTS 75 total bytes 4000194 in_flight now -1280 cwnd 11662 sim time 62127.2 bg traffic 0
+Trigger 461 fired, 1 targets
+Flow Uec_16_9 flowId 477 uecSrc 476 starting at 62127.2
+Flow Uec_15_25 flowId 290 uecSrc 289 finished at 6593.16 flowSize 4000000 total packets 1060 RTS 81 total bytes 4000194 in_flight now -1216 cwnd 11605 sim time 62435.5 bg traffic 0
+Trigger 281 fired, 1 targets
+Flow Uec_25_11 flowId 291 uecSrc 290 starting at 62435.5
+Flow Uec_6_19 flowId 414 uecSrc 413 finished at 5812.01 flowSize 4000000 total packets 1052 RTS 73 total bytes 4000194 in_flight now -1280 cwnd 8334 sim time 62473.2 bg traffic 0
+Trigger 401 fired, 1 targets
+Flow Uec_19_12 flowId 415 uecSrc 414 starting at 62473.2
+Flow Uec_14_24 flowId 104 uecSrc 103 finished at 5790.61 flowSize 4000000 total packets 1051 RTS 72 total bytes 4000194 in_flight now -1088 cwnd 23791 sim time 62992.9 bg traffic 0
+Trigger 101 fired, 1 targets
+Flow Uec_24_20 flowId 105 uecSrc 104 starting at 62992.9
+Flow Uec_26_5 flowId 197 uecSrc 196 finished at 5359.37 flowSize 4000000 total packets 1046 RTS 67 total bytes 4000194 in_flight now -896 cwnd 9657 sim time 63394.6 bg traffic 0
+Trigger 191 fired, 1 targets
+Flow Uec_5_10 flowId 198 uecSrc 197 starting at 63394.6
+Flow Uec_10_15 flowId 229 uecSrc 228 finished at 6231.58 flowSize 4000000 total packets 1050 RTS 71 total bytes 4000194 in_flight now -1216 cwnd 11386 sim time 64957.3 bg traffic 0
+Trigger 222 fired, 1 targets
+Flow Uec_15_25 flowId 230 uecSrc 229 starting at 64957.3
+Flow Uec_26_5 flowId 167 uecSrc 166 finished at 6197.02 flowSize 4000000 total packets 1060 RTS 81 total bytes 4000194 in_flight now -1152 cwnd 8300 sim time 65266.5 bg traffic 0
+Trigger 162 fired, 1 targets
+Flow Uec_5_10 flowId 168 uecSrc 167 starting at 65266.5
+Flow Uec_20_26 flowId 136 uecSrc 135 finished at 6045.78 flowSize 4000000 total packets 1043 RTS 64 total bytes 4000194 in_flight now -960 cwnd 25008 sim time 65399.3 bg traffic 0
+Trigger 132 fired, 1 targets
+Flow Uec_26_5 flowId 137 uecSrc 136 starting at 65399.3
+Flow Uec_6_19 flowId 384 uecSrc 383 finished at 6239.1 flowSize 4000000 total packets 1057 RTS 78 total bytes 4000194 in_flight now -1664 cwnd 11115 sim time 65471.5 bg traffic 0
+Trigger 372 fired, 1 targets
+Flow Uec_19_12 flowId 385 uecSrc 384 starting at 65471.5
+Flow Uec_12_16 flowId 446 uecSrc 445 finished at 6450.31 flowSize 4000000 total packets 1057 RTS 78 total bytes 4000194 in_flight now -1536 cwnd 8302 sim time 65544.1 bg traffic 0
+Trigger 432 fired, 1 targets
+Flow Uec_16_9 flowId 447 uecSrc 446 starting at 65544.1
+Flow Uec_14_24 flowId 74 uecSrc 73 finished at 5854.14 flowSize 4000000 total packets 1048 RTS 69 total bytes 4000194 in_flight now -832 cwnd 8313 sim time 66131.5 bg traffic 0
+Trigger 72 fired, 1 targets
+Flow Uec_24_20 flowId 75 uecSrc 74 starting at 66131.5
+Flow Uec_11_22 flowId 322 uecSrc 321 finished at 6948.71 flowSize 4000000 total packets 1066 RTS 87 total bytes 4000194 in_flight now -1472 cwnd 8301 sim time 66354.2 bg traffic 0
+Trigger 312 fired, 1 targets
+Flow Uec_22_6 flowId 323 uecSrc 322 starting at 66354.2
+Flow Uec_15_25 flowId 260 uecSrc 259 finished at 6222.94 flowSize 4000000 total packets 1053 RTS 74 total bytes 4000194 in_flight now -1472 cwnd 16616 sim time 66394.1 bg traffic 0
+Trigger 252 fired, 1 targets
+Flow Uec_25_11 flowId 261 uecSrc 260 starting at 66394.1
+Flow Uec_22_6 flowId 353 uecSrc 352 finished at 6056.45 flowSize 4000000 total packets 1054 RTS 75 total bytes 4000194 in_flight now -1536 cwnd 19422 sim time 66844.9 bg traffic 0
+Trigger 342 fired, 1 targets
+Flow Uec_6_19 flowId 354 uecSrc 353 starting at 66844.9
+Flow Uec_28_14 flowId 43 uecSrc 42 finished at 5011.54 flowSize 4000000 total packets 1043 RTS 64 total bytes 4000194 in_flight now -1216 cwnd 22316 sim time 66950.7 bg traffic 0
+Trigger 42 fired, 1 targets
+Flow Uec_14_24 flowId 44 uecSrc 43 starting at 66950.7
+Flow Uec_16_9 flowId 477 uecSrc 476 finished at 5541.5 flowSize 4000000 total packets 1044 RTS 65 total bytes 4000194 in_flight now -1024 cwnd 13677 sim time 67668.7 bg traffic 0
+Trigger 462 fired, 1 targets
+Flow Uec_9_28 flowId 478 uecSrc 477 starting at 67668.7
+Flow Uec_19_12 flowId 415 uecSrc 414 finished at 5278.13 flowSize 4000000 total packets 1048 RTS 69 total bytes 4000194 in_flight now -1152 cwnd 21053 sim time 67751.3 bg traffic 0
+Trigger 402 fired, 1 targets
+Flow Uec_12_16 flowId 416 uecSrc 415 starting at 67751.3
+Flow Uec_25_11 flowId 291 uecSrc 290 finished at 5552.06 flowSize 4000000 total packets 1047 RTS 68 total bytes 4000194 in_flight now -1088 cwnd 10556 sim time 67987.5 bg traffic 0
+Trigger 282 fired, 1 targets
+Flow Uec_11_22 flowId 292 uecSrc 291 starting at 67987.5
+Flow Uec_24_20 flowId 105 uecSrc 104 finished at 5119.19 flowSize 4000000 total packets 1044 RTS 65 total bytes 4000194 in_flight now -1216 cwnd 11938 sim time 68112.1 bg traffic 0
+Trigger 102 fired, 1 targets
+Flow Uec_20_26 flowId 106 uecSrc 105 starting at 68112.1
+Flow Uec_9_28 flowId 12 uecSrc 11 finished at 6369.9 flowSize 4000000 total packets 1062 RTS 83 total bytes 4000194 in_flight now -1344 cwnd 14969 sim time 68411.7 bg traffic 0
+Trigger 12 fired, 1 targets
+Flow Uec_28_14 flowId 13 uecSrc 12 starting at 68411.7
+Flow Uec_5_10 flowId 198 uecSrc 197 finished at 5971.18 flowSize 4000000 total packets 1054 RTS 75 total bytes 4000194 in_flight now -1088 cwnd 10616 sim time 69365.8 bg traffic 0
+Trigger 192 fired, 1 targets
+Flow Uec_10_15 flowId 199 uecSrc 198 starting at 69365.8
+Flow Uec_15_25 flowId 230 uecSrc 229 finished at 5694.62 flowSize 4000000 total packets 1048 RTS 69 total bytes 4000194 in_flight now -1216 cwnd 8300 sim time 70652 bg traffic 0
+Trigger 223 fired, 1 targets
+Flow Uec_25_11 flowId 231 uecSrc 230 starting at 70652
+Flow Uec_5_10 flowId 168 uecSrc 167 finished at 5895.29 flowSize 4000000 total packets 1051 RTS 72 total bytes 4000194 in_flight now -704 cwnd 12021 sim time 71161.8 bg traffic 0
+Trigger 163 fired, 1 targets
+Flow Uec_10_15 flowId 169 uecSrc 168 starting at 71161.8
+Flow Uec_26_5 flowId 137 uecSrc 136 finished at 6077.51 flowSize 4000000 total packets 1057 RTS 78 total bytes 4000194 in_flight now -1408 cwnd 13909 sim time 71476.8 bg traffic 0
+Trigger 133 fired, 1 targets
+Flow Uec_5_10 flowId 138 uecSrc 137 starting at 71476.8
+Flow Uec_16_9 flowId 447 uecSrc 446 finished at 5982.23 flowSize 4000000 total packets 1057 RTS 78 total bytes 4000194 in_flight now -1472 cwnd 15575 sim time 71526.3 bg traffic 0
+Trigger 433 fired, 1 targets
+Flow Uec_9_28 flowId 448 uecSrc 447 starting at 71526.3
+Flow Uec_19_12 flowId 385 uecSrc 384 finished at 6137.19 flowSize 4000000 total packets 1051 RTS 72 total bytes 4000194 in_flight now -1024 cwnd 18804 sim time 71608.7 bg traffic 0
+Trigger 373 fired, 1 targets
+Flow Uec_12_16 flowId 386 uecSrc 385 starting at 71608.7
+Flow Uec_24_20 flowId 75 uecSrc 74 finished at 5821.88 flowSize 4000000 total packets 1052 RTS 73 total bytes 4000194 in_flight now -1152 cwnd 8268 sim time 71953.4 bg traffic 0
+Trigger 73 fired, 1 targets
+Flow Uec_20_26 flowId 76 uecSrc 75 starting at 71953.4
+Flow Uec_22_6 flowId 323 uecSrc 322 finished at 5864.86 flowSize 4000000 total packets 1051 RTS 72 total bytes 4000194 in_flight now -1152 cwnd 16410 sim time 72219 bg traffic 0
+Trigger 313 fired, 1 targets
+Flow Uec_6_19 flowId 324 uecSrc 323 starting at 72219
+Flow Uec_6_19 flowId 354 uecSrc 353 finished at 5536.62 flowSize 4000000 total packets 1043 RTS 64 total bytes 4000194 in_flight now -960 cwnd 10126 sim time 72381.5 bg traffic 0
+Trigger 343 fired, 1 targets
+Flow Uec_19_12 flowId 355 uecSrc 354 starting at 72381.5
+Flow Uec_25_11 flowId 261 uecSrc 260 finished at 6156.95 flowSize 4000000 total packets 1051 RTS 72 total bytes 4000194 in_flight now -1920 cwnd 8143 sim time 72551 bg traffic 0
+Trigger 253 fired, 1 targets
+Flow Uec_11_22 flowId 262 uecSrc 261 starting at 72551
+Flow Uec_9_28 flowId 478 uecSrc 477 finished at 5000.01 flowSize 4000000 total packets 1047 RTS 68 total bytes 4000194 in_flight now -1024 cwnd 13169 sim time 72668.7 bg traffic 0
+Trigger 463 fired, 1 targets
+Flow Uec_28_14 flowId 479 uecSrc 478 starting at 72668.7
+Flow Uec_12_16 flowId 416 uecSrc 415 finished at 5154.62 flowSize 4000000 total packets 1046 RTS 67 total bytes 4000194 in_flight now -1280 cwnd 14628 sim time 72906 bg traffic 0
+Trigger 403 fired, 1 targets
+Flow Uec_16_9 flowId 417 uecSrc 416 starting at 72906
+Flow Uec_14_24 flowId 44 uecSrc 43 finished at 6382.72 flowSize 4000000 total packets 1052 RTS 73 total bytes 4000194 in_flight now -1152 cwnd 11318 sim time 73333.4 bg traffic 0
+Trigger 43 fired, 1 targets
+Flow Uec_24_20 flowId 45 uecSrc 44 starting at 73333.4
+Flow Uec_28_14 flowId 13 uecSrc 12 finished at 5237.94 flowSize 4000000 total packets 1042 RTS 63 total bytes 4000194 in_flight now -960 cwnd 14538 sim time 73649.6 bg traffic 0
+Trigger 13 fired, 1 targets
+Flow Uec_14_24 flowId 14 uecSrc 13 starting at 73649.6
+Flow Uec_11_22 flowId 292 uecSrc 291 finished at 5686.7 flowSize 4000000 total packets 1057 RTS 78 total bytes 4000194 in_flight now -1344 cwnd 8364 sim time 73674.2 bg traffic 0
+Trigger 283 fired, 1 targets
+Flow Uec_22_6 flowId 293 uecSrc 292 starting at 73674.2
+Flow Uec_10_15 flowId 199 uecSrc 198 finished at 4441.58 flowSize 4000000 total packets 1034 RTS 55 total bytes 4000194 in_flight now -1216 cwnd 12142 sim time 73807.4 bg traffic 0
+Trigger 193 fired, 1 targets
+Flow Uec_15_25 flowId 200 uecSrc 199 starting at 73807.4
+Flow Uec_20_26 flowId 106 uecSrc 105 finished at 6005.25 flowSize 4000000 total packets 1052 RTS 73 total bytes 4000194 in_flight now -1344 cwnd 12600 sim time 74117.3 bg traffic 0
+Trigger 103 fired, 1 targets
+Flow Uec_26_5 flowId 107 uecSrc 106 starting at 74117.3
+Flow Uec_25_11 flowId 231 uecSrc 230 finished at 4892.65 flowSize 4000000 total packets 1042 RTS 63 total bytes 4000194 in_flight now -960 cwnd 14004 sim time 75544.6 bg traffic 0
+Trigger 224 fired, 1 targets
+Flow Uec_11_22 flowId 232 uecSrc 231 starting at 75544.6
+Flow Uec_10_15 flowId 169 uecSrc 168 finished at 4869.61 flowSize 4000000 total packets 1043 RTS 64 total bytes 4000194 in_flight now -1024 cwnd 9857 sim time 76031.4 bg traffic 0
+Trigger 164 fired, 1 targets
+Flow Uec_15_25 flowId 170 uecSrc 169 starting at 76031.4
+Flow Uec_5_10 flowId 138 uecSrc 137 finished at 5195.2 flowSize 4000000 total packets 1041 RTS 62 total bytes 4000194 in_flight now -256 cwnd 16229 sim time 76672 bg traffic 0
+Trigger 134 fired, 1 targets
+Flow Uec_10_15 flowId 139 uecSrc 138 starting at 76672
+Flow Uec_9_28 flowId 448 uecSrc 447 finished at 5595.6 flowSize 4000000 total packets 1050 RTS 71 total bytes 4000194 in_flight now -1216 cwnd 13182 sim time 77121.9 bg traffic 0
+Trigger 434 fired, 1 targets
+Flow Uec_28_14 flowId 449 uecSrc 448 starting at 77121.9
+Flow Uec_12_16 flowId 386 uecSrc 385 finished at 5948.75 flowSize 4000000 total packets 1055 RTS 76 total bytes 4000194 in_flight now -768 cwnd 8441 sim time 77557.4 bg traffic 0
+Trigger 374 fired, 1 targets
+Flow Uec_16_9 flowId 387 uecSrc 386 starting at 77557.4
+Flow Uec_6_19 flowId 324 uecSrc 323 finished at 5477.94 flowSize 4000000 total packets 1045 RTS 66 total bytes 4000194 in_flight now -1152 cwnd 21100 sim time 77697 bg traffic 0
+Trigger 314 fired, 1 targets
+Flow Uec_19_12 flowId 325 uecSrc 324 starting at 77697
+Flow Uec_20_26 flowId 76 uecSrc 75 finished at 5889.23 flowSize 4000000 total packets 1057 RTS 78 total bytes 4000194 in_flight now -1088 cwnd 8300 sim time 77842.6 bg traffic 0
+Trigger 74 fired, 1 targets
+Flow Uec_26_5 flowId 77 uecSrc 76 starting at 77842.6
+Flow Uec_19_12 flowId 355 uecSrc 354 finished at 5840.37 flowSize 4000000 total packets 1045 RTS 66 total bytes 4000194 in_flight now -576 cwnd 9940 sim time 78221.9 bg traffic 0
+Trigger 344 fired, 1 targets
+Flow Uec_12_16 flowId 356 uecSrc 355 starting at 78221.9
+Flow Uec_11_22 flowId 262 uecSrc 261 finished at 6005.28 flowSize 4000000 total packets 1056 RTS 77 total bytes 4000194 in_flight now -1024 cwnd 8106 sim time 78556.3 bg traffic 0
+Trigger 254 fired, 1 targets
+Flow Uec_22_6 flowId 263 uecSrc 262 starting at 78556.3
+Flow Uec_28_14 flowId 479 uecSrc 478 finished at 5930.11 flowSize 4000000 total packets 1058 RTS 79 total bytes 4000194 in_flight now -1088 cwnd 10467 sim time 78598.9 bg traffic 0
+Trigger 464 fired, 1 targets
+Flow Uec_14_24 flowId 480 uecSrc 479 starting at 78598.9
+Flow Uec_22_6 flowId 293 uecSrc 292 finished at 5362.78 flowSize 4000000 total packets 1042 RTS 63 total bytes 4000194 in_flight now -576 cwnd 18246 sim time 79037 bg traffic 0
+Trigger 284 fired, 1 targets
+Flow Uec_6_19 flowId 294 uecSrc 293 starting at 79037
+Flow Uec_24_20 flowId 45 uecSrc 44 finished at 5932.8 flowSize 4000000 total packets 1052 RTS 73 total bytes 4000194 in_flight now -1088 cwnd 13878 sim time 79266.2 bg traffic 0
+Trigger 44 fired, 1 targets
+Flow Uec_20_26 flowId 46 uecSrc 45 starting at 79266.2
+Flow Uec_16_9 flowId 417 uecSrc 416 finished at 6518.45 flowSize 4000000 total packets 1053 RTS 74 total bytes 4000194 in_flight now -1344 cwnd 13723 sim time 79424.4 bg traffic 0
+Trigger 404 fired, 1 targets
+Flow Uec_9_28 flowId 418 uecSrc 417 starting at 79424.4
+Flow Uec_15_25 flowId 200 uecSrc 199 finished at 5849.22 flowSize 4000000 total packets 1051 RTS 72 total bytes 4000194 in_flight now -1280 cwnd 24343 sim time 79656.6 bg traffic 0
+Trigger 194 fired, 1 targets
+Flow Uec_25_11 flowId 201 uecSrc 200 starting at 79656.6
+Flow Uec_26_5 flowId 107 uecSrc 106 finished at 5705.67 flowSize 4000000 total packets 1050 RTS 71 total bytes 4000194 in_flight now -1216 cwnd 11907 sim time 79823 bg traffic 0
+Trigger 104 fired, 1 targets
+Flow Uec_5_10 flowId 108 uecSrc 107 starting at 79823
+Flow Uec_14_24 flowId 14 uecSrc 13 finished at 6484.3 flowSize 4000000 total packets 1058 RTS 79 total bytes 4000194 in_flight now -1344 cwnd 11282 sim time 80133.9 bg traffic 0
+Trigger 14 fired, 1 targets
+Flow Uec_24_20 flowId 15 uecSrc 14 starting at 80133.9
+Flow Uec_11_22 flowId 232 uecSrc 231 finished at 4866.62 flowSize 4000000 total packets 1046 RTS 67 total bytes 4000194 in_flight now -1088 cwnd 8300 sim time 80411.2 bg traffic 0
+Trigger 225 fired, 1 targets
+Flow Uec_22_6 flowId 233 uecSrc 232 starting at 80411.2
+Flow Uec_15_25 flowId 170 uecSrc 169 finished at 5402.73 flowSize 4000000 total packets 1050 RTS 71 total bytes 4000194 in_flight now -1024 cwnd 11288 sim time 81434.2 bg traffic 0
+Trigger 165 fired, 1 targets
+Flow Uec_25_11 flowId 171 uecSrc 170 starting at 81434.2
+Flow Uec_10_15 flowId 139 uecSrc 138 finished at 5176.66 flowSize 4000000 total packets 1042 RTS 63 total bytes 4000194 in_flight now -1152 cwnd 8795 sim time 81848.6 bg traffic 0
+Trigger 135 fired, 1 targets
+Flow Uec_15_25 flowId 140 uecSrc 139 starting at 81848.6
+Flow Uec_28_14 flowId 449 uecSrc 448 finished at 5497.8 flowSize 4000000 total packets 1049 RTS 70 total bytes 4000194 in_flight now -1664 cwnd 8570 sim time 82619.7 bg traffic 0
+Trigger 435 fired, 1 targets
+Flow Uec_14_24 flowId 450 uecSrc 449 starting at 82619.7
+Flow Uec_16_9 flowId 387 uecSrc 386 finished at 5461.86 flowSize 4000000 total packets 1042 RTS 63 total bytes 4000194 in_flight now -704 cwnd 8342 sim time 83019.3 bg traffic 0
+Trigger 375 fired, 1 targets
+Flow Uec_9_28 flowId 388 uecSrc 387 starting at 83019.3
+Flow Uec_26_5 flowId 77 uecSrc 76 finished at 5186.35 flowSize 4000000 total packets 1045 RTS 66 total bytes 4000194 in_flight now -1344 cwnd 20641 sim time 83029 bg traffic 0
+Trigger 75 fired, 1 targets
+Flow Uec_5_10 flowId 78 uecSrc 77 starting at 83029
+Flow Uec_12_16 flowId 356 uecSrc 355 finished at 5051.4 flowSize 4000000 total packets 1042 RTS 63 total bytes 4000194 in_flight now -960 cwnd 13768 sim time 83273.3 bg traffic 0
+Trigger 345 fired, 1 targets
+Flow Uec_16_9 flowId 357 uecSrc 356 starting at 83273.3
+Flow Uec_19_12 flowId 325 uecSrc 324 finished at 5747.47 flowSize 4000000 total packets 1051 RTS 72 total bytes 4000194 in_flight now -1280 cwnd 14195 sim time 83444.4 bg traffic 0
+Trigger 315 fired, 1 targets
+Flow Uec_12_16 flowId 326 uecSrc 325 starting at 83444.4
+Flow Uec_6_19 flowId 294 uecSrc 293 finished at 5543.93 flowSize 4000000 total packets 1043 RTS 64 total bytes 4000194 in_flight now -960 cwnd 12201 sim time 84580.9 bg traffic 0
+Trigger 285 fired, 1 targets
+Flow Uec_19_12 flowId 295 uecSrc 294 starting at 84580.9
+Flow Uec_14_24 flowId 480 uecSrc 479 finished at 6305.27 flowSize 4000000 total packets 1064 RTS 85 total bytes 4000194 in_flight now -1472 cwnd 20521 sim time 84904.1 bg traffic 0
+Trigger 465 fired, 1 targets
+Flow Uec_24_20 flowId 481 uecSrc 480 starting at 84904.1
+Flow Uec_25_11 flowId 201 uecSrc 200 finished at 5329.87 flowSize 4000000 total packets 1052 RTS 73 total bytes 4000194 in_flight now -1280 cwnd 15648 sim time 84986.5 bg traffic 0
+Trigger 195 fired, 1 targets
+Flow Uec_11_22 flowId 202 uecSrc 201 starting at 84986.5
+Flow Uec_9_28 flowId 418 uecSrc 417 finished at 5739.27 flowSize 4000000 total packets 1044 RTS 65 total bytes 4000194 in_flight now -960 cwnd 11119 sim time 85163.7 bg traffic 0
+Trigger 405 fired, 1 targets
+Flow Uec_28_14 flowId 419 uecSrc 418 starting at 85163.7
+Flow Uec_5_10 flowId 108 uecSrc 107 finished at 5685.58 flowSize 4000000 total packets 1049 RTS 70 total bytes 4000194 in_flight now -1280 cwnd 8300 sim time 85508.6 bg traffic 0
+Trigger 105 fired, 1 targets
+Flow Uec_10_15 flowId 109 uecSrc 108 starting at 85508.6
+Flow Uec_20_26 flowId 46 uecSrc 45 finished at 6421.09 flowSize 4000000 total packets 1060 RTS 81 total bytes 4000194 in_flight now -1088 cwnd 8268 sim time 85687.3 bg traffic 0
+Trigger 45 fired, 1 targets
+Flow Uec_26_5 flowId 47 uecSrc 46 starting at 85687.3
+Flow Uec_22_6 flowId 263 uecSrc 262 finished at 7136.9 flowSize 4000000 total packets 1060 RTS 81 total bytes 4000194 in_flight now -1600 cwnd 13994 sim time 85693.2 bg traffic 0
+Trigger 255 fired, 1 targets
+Flow Uec_6_19 flowId 264 uecSrc 263 starting at 85693.2
+Flow Uec_24_20 flowId 15 uecSrc 14 finished at 6122.1 flowSize 4000000 total packets 1053 RTS 74 total bytes 4000194 in_flight now -1408 cwnd 11692 sim time 86256 bg traffic 0
+Trigger 15 fired, 1 targets
+Flow Uec_20_26 flowId 16 uecSrc 15 starting at 86256
+Flow Uec_22_6 flowId 233 uecSrc 232 finished at 6363.27 flowSize 4000000 total packets 1060 RTS 81 total bytes 4000194 in_flight now -1024 cwnd 14948 sim time 86774.5 bg traffic 0
+Trigger 226 fired, 1 targets
+Flow Uec_6_19 flowId 234 uecSrc 233 starting at 86774.5
+Flow Uec_25_11 flowId 171 uecSrc 170 finished at 5636.09 flowSize 4000000 total packets 1053 RTS 74 total bytes 4000194 in_flight now -1344 cwnd 12118 sim time 87070.3 bg traffic 0
+Trigger 166 fired, 1 targets
+Flow Uec_11_22 flowId 172 uecSrc 171 starting at 87070.3
+Flow Uec_14_24 flowId 450 uecSrc 449 finished at 5195.72 flowSize 4000000 total packets 1043 RTS 64 total bytes 4000194 in_flight now -1216 cwnd 9526 sim time 87815.4 bg traffic 0
+Trigger 436 fired, 1 targets
+Flow Uec_24_20 flowId 451 uecSrc 450 starting at 87815.4
+Flow Uec_15_25 flowId 140 uecSrc 139 finished at 6599.87 flowSize 4000000 total packets 1058 RTS 79 total bytes 4000194 in_flight now -704 cwnd 9928 sim time 88448.5 bg traffic 0
+Trigger 136 fired, 1 targets
+Flow Uec_25_11 flowId 141 uecSrc 140 starting at 88448.5
+Flow Uec_9_28 flowId 388 uecSrc 387 finished at 5912.5 flowSize 4000000 total packets 1053 RTS 74 total bytes 4000194 in_flight now -1408 cwnd 15646 sim time 88931.8 bg traffic 0
+Trigger 376 fired, 1 targets
+Flow Uec_28_14 flowId 389 uecSrc 388 starting at 88931.8
+Flow Uec_5_10 flowId 78 uecSrc 77 finished at 5961.74 flowSize 4000000 total packets 1057 RTS 78 total bytes 4000194 in_flight now -1408 cwnd 10919 sim time 88990.7 bg traffic 0
+Trigger 76 fired, 1 targets
+Flow Uec_10_15 flowId 79 uecSrc 78 starting at 88990.7
+Flow Uec_16_9 flowId 357 uecSrc 356 finished at 6210.96 flowSize 4000000 total packets 1057 RTS 78 total bytes 4000194 in_flight now -960 cwnd 8772 sim time 89484.3 bg traffic 0
+Trigger 346 fired, 1 targets
+Flow Uec_9_28 flowId 358 uecSrc 357 starting at 89484.3
+Flow Uec_12_16 flowId 326 uecSrc 325 finished at 6074.42 flowSize 4000000 total packets 1053 RTS 74 total bytes 4000194 in_flight now -1088 cwnd 12070 sim time 89518.8 bg traffic 0
+Trigger 316 fired, 1 targets
+Flow Uec_16_9 flowId 327 uecSrc 326 starting at 89518.8
+Done
+New: 0 Rtx: 0 RTS: 0 Bounced: 0 ACKs: 0
+Total number of dropped packets: 160545
+1 1 0

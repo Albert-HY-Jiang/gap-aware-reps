@@ -1,0 +1,17 @@
+scenario,algo,mapping,seed,jct_end,jct_start,unfinished,jct_us,ref,dropped_pkts,freeze_msgs,degraded_links
+ar32_5pct_cables,freezing,off,42,2937.72,0.0,0,2937.72,ar32_sym,18501,248,0
+ar32_5pct_cables,freezing,on,42,3648.19,0.0,0,3648.19,ar32_sym,4704,11,0
+ar32_5pct_cables,oblivious,off,42,42015.5,0.0,0,42015.5,ar32_sym,110627,0,0
+ar32_5pct_cables,oblivious,on,42,67504.9,0.0,0,67504.9,ar32_sym,112293,0,0
+ar32_fail_one_cable,freezing,off,42,2869.57,0.0,0,2869.57,ar32_sym,6670,93,0
+ar32_fail_one_cable,freezing,on,42,5592.51,0.0,0,5592.51,ar32_sym,2244,6,0
+ar32_fail_one_cable,oblivious,off,42,22354.8,0.0,0,22354.8,ar32_sym,54483,0,0
+ar32_fail_one_cable,oblivious,on,42,33410.5,0.0,0,33410.5,ar32_sym,55500,0,0
+ar32_fail_one_switch,freezing,off,42,3059.71,0.0,0,3059.71,ar32_sym,39809,496,0
+ar32_fail_one_switch,freezing,on,42,8307.9,0.0,0,8307.9,ar32_sym,1977,24,0
+ar32_fail_one_switch,oblivious,off,42,89723.2,0.0,16,,ar32_sym,254975,0,0
+ar32_fail_one_switch,oblivious,on,42,89973.4,0.0,16,,ar32_sym,160393,0,0
+ar32_sym,freezing,off,42,2821.08,0.0,0,2821.08,,0,0,0
+ar32_sym,freezing,on,42,2820.72,0.0,0,2820.72,,0,0,0
+ar32_sym,oblivious,off,42,2824.43,0.0,0,2824.43,,0,0,0
+ar32_sym,oblivious,on,42,2824.43,0.0,0,2824.43,,0,0,0

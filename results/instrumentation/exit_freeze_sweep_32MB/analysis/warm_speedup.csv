@@ -1,0 +1,13 @@
+scenario,algo,ef,mean,min,max,count
+ar32_sym,freezing,100us,1.0,1.0,1.0,1
+ar32_sym,freezing,1000us,1.0,1.0,1.0,1
+ar32_sym,freezing,10000us,1.0,1.0,1.0,1
+ar32_fail_one_cable,freezing,100us,0.8022,0.8022,0.8022,1
+ar32_fail_one_cable,freezing,1000us,0.9671,0.9671,0.9671,1
+ar32_fail_one_cable,freezing,10000us,0.7936,0.7936,0.7936,1
+ar32_fail_one_switch,freezing,100us,0.7768,0.7768,0.7768,1
+ar32_fail_one_switch,freezing,1000us,1.0705,1.0705,1.0705,1
+ar32_fail_one_switch,freezing,10000us,0.6882,0.6882,0.6882,1
+ar32_5pct_cables,freezing,100us,0.4591,0.4591,0.4591,1
+ar32_5pct_cables,freezing,1000us,0.8999,0.8999,0.8999,1
+ar32_5pct_cables,freezing,10000us,0.5961,0.5961,0.5961,1

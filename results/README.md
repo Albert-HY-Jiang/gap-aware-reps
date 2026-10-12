@@ -26,8 +26,12 @@ The medium suite completed successfully with:
 - Peak resident memory: **~4.6 GiB**
 - Exit status: **0**
 
-Only selected plots are tracked in Git. Large raw simulator outputs and
-intermediate files are not committed to the repository.
+The plots and the raw `artifact_results/fig_*` outputs of the medium run are tracked in Git.
+
+## Instrumentation and cold vs warm start
+
+`instrumentation/` contains the REPS instrumentation experiments (cold vs warm start under
+failures, `exit_freeze` sweeps). See `instrumentation/README.md` for findings and reproduction.
 
 ## Source
 

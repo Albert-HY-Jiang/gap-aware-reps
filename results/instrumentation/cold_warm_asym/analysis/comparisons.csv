@@ -1,0 +1,5 @@
+scenario,reps_vs_obl_jct_cold,reps_vs_obl_jct_warm,warm_speedup_jct_reps,warm_speedup_jct_obl,warm_speedup_fct_reps,warm_speedup_fct_obl,random_sends_cold,random_sends_warm,ecn_rate_cold,ecn_rate_warm,drops_reps_cold
+ar32_sym,1.0012,1.0013,1.0001,1.0,1.0,1.0,106.6146,96.1167,0.0,0.0,0.0
+ar32_fail_one_cable,7.7903,5.9742,0.5131,0.6691,0.6677,0.9955,120.3771,58.0292,0.0001,0.0265,6670.0
+ar32_fail_one_switch,,,0.3683,,0.629,0.5998,182.3771,3.4646,0.0002,0.0629,39809.0
+ar32_5pct_cables,14.3021,18.5037,0.8053,0.6224,0.9779,1.1569,143.2083,59.2188,0.0002,0.0219,18501.0

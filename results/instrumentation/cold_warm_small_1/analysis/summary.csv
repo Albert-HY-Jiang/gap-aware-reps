@@ -1,0 +1,5 @@
+algo,mapping,flows,warm_flows,shared_buffer_flows,fct_med_us,fct_p99_us,fct_mean_us,pkts_sent,cache_empty_sends,cold_frac,cached_frac,ecn_rate,gap_med_us
+freezing,off,480,0,0,90.95,91.1984,90.9701,979.0,106.575,0.1089,0.8911,0.0,0.65
+freezing,on,480,473,240,90.95,91.1917,90.9631,979.0,96.0812,0.0981,0.9019,0.0,90.16
+oblivious,off,480,0,0,91.0405,91.29,91.0635,0.0,0.0,,,,90.19
+oblivious,on,480,474,243,91.0405,91.29,91.0635,0.0,0.0,,,,90.19

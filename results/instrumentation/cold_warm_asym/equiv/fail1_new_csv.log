@@ -1,0 +1,1102 @@
+Setting receiver SACK bytes threshold to 4000 bytes 
+endtime(us) 90000
+random seed 5
+no of paths 65535
+sender based CC enabled ONLY
+sender based algo mprdma
+FatTree topology input file: /users/hongyi9/gap-aware-reps/htsim/sim/datacenter/topologies/reps/fat_tree_128_1os_2t_400g.topo
+Setting queuesize to 100 packets 
+cwnd 151
+Load balancing algorithm set to  freezing
+traffic matrix input file: /users/hongyi9/gap-aware-reps/htsim/sim/datacenter/connection_matrices/test_symm16.cm
+Parsed args
+Setting ECN for queues with size 415000, with parameters low 83000 high 332000 enable on tor downlink 1
+enable quick adapt gate
+Logging to logout.dat
+Linkspeed set to 400Gbps
+Loading connection matrix from  /users/hongyi9/gap-aware-reps/htsim/sim/datacenter/connection_matrices/test_symm16.cm
+Nodes: 128 Connections: 8 Triggers: 0 Failures: 0
+Chosen filter for metric globalInfo: Filter: regex=.*, enabled=1, downsampling_ratio=1
+Topology load done
+Fat Tree topology (0) with 1us Src-ToR links, 1us ToR-Agg links, 0us ToR switch latency, 0us Agg switch latency for 4us diameter latency.
+no_of_tor_uplinks: 128
+No of nodes: 128
+No of pods: 1
+Hosts per pod: 128
+Hosts per pod: 128
+ToR switches per pod: 16
+Agg switches per pod: 8
+No of core switches: 0
+Tier 0 QueueSize Down 415000 bytes
+Tier 0 QueueSize Up 415000 bytes
+Tier 1 QueueSize Down 415000 bytes
+Tier 1 QueueSize Up 415000 bytes
+Chosen filter for metric queueEnq_LS0->DST0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS0->DST0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS0->DST1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS0->DST1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+queue_id 2 ecn_low 83000 ecn_high 332000
+Chosen filter for metric queueEnq_LS0->DST2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS0->DST2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS0->DST3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS0->DST3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS0->DST4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS0->DST4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS0->DST5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS0->DST5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS0->DST6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS0->DST6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS0->DST7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS0->DST7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS1->DST8(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS1->DST8(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS1->DST9(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS1->DST9(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS1->DST10(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS1->DST10(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS1->DST11(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS1->DST11(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS1->DST12(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS1->DST12(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS1->DST13(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS1->DST13(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS1->DST14(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS1->DST14(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS1->DST15(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS1->DST15(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS2->DST16(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS2->DST16(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS2->DST17(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS2->DST17(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS2->DST18(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS2->DST18(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS2->DST19(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS2->DST19(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS2->DST20(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS2->DST20(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS2->DST21(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS2->DST21(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS2->DST22(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS2->DST22(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS2->DST23(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS2->DST23(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS3->DST24(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS3->DST24(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS3->DST25(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS3->DST25(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS3->DST26(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS3->DST26(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS3->DST27(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS3->DST27(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS3->DST28(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS3->DST28(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS3->DST29(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS3->DST29(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS3->DST30(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS3->DST30(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS3->DST31(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS3->DST31(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS4->DST32(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS4->DST32(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS4->DST33(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS4->DST33(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS4->DST34(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS4->DST34(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS4->DST35(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS4->DST35(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS4->DST36(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS4->DST36(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS4->DST37(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS4->DST37(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS4->DST38(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS4->DST38(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS4->DST39(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS4->DST39(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS5->DST40(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS5->DST40(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS5->DST41(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS5->DST41(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS5->DST42(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS5->DST42(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS5->DST43(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS5->DST43(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS5->DST44(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS5->DST44(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS5->DST45(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS5->DST45(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS5->DST46(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS5->DST46(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS5->DST47(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS5->DST47(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS6->DST48(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS6->DST48(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS6->DST49(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS6->DST49(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS6->DST50(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS6->DST50(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS6->DST51(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS6->DST51(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS6->DST52(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS6->DST52(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS6->DST53(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS6->DST53(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS6->DST54(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS6->DST54(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS6->DST55(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS6->DST55(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS7->DST56(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS7->DST56(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS7->DST57(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS7->DST57(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS7->DST58(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS7->DST58(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS7->DST59(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS7->DST59(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS7->DST60(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS7->DST60(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS7->DST61(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS7->DST61(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS7->DST62(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS7->DST62(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS7->DST63(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS7->DST63(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS8->DST64(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS8->DST64(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS8->DST65(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS8->DST65(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS8->DST66(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS8->DST66(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS8->DST67(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS8->DST67(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS8->DST68(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS8->DST68(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS8->DST69(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS8->DST69(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS8->DST70(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS8->DST70(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS8->DST71(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS8->DST71(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS9->DST72(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS9->DST72(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS9->DST73(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS9->DST73(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS9->DST74(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS9->DST74(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS9->DST75(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS9->DST75(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS9->DST76(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS9->DST76(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS9->DST77(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS9->DST77(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS9->DST78(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS9->DST78(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS9->DST79(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS9->DST79(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS10->DST80(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS10->DST80(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS10->DST81(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS10->DST81(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS10->DST82(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS10->DST82(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS10->DST83(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS10->DST83(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS10->DST84(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS10->DST84(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS10->DST85(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS10->DST85(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS10->DST86(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS10->DST86(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS10->DST87(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS10->DST87(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS11->DST88(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS11->DST88(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS11->DST89(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS11->DST89(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS11->DST90(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS11->DST90(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS11->DST91(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS11->DST91(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS11->DST92(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS11->DST92(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS11->DST93(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS11->DST93(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS11->DST94(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS11->DST94(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS11->DST95(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS11->DST95(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS12->DST96(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS12->DST96(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS12->DST97(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS12->DST97(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS12->DST98(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS12->DST98(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS12->DST99(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS12->DST99(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS12->DST100(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS12->DST100(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS12->DST101(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS12->DST101(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS12->DST102(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS12->DST102(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS12->DST103(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS12->DST103(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS13->DST104(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS13->DST104(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS13->DST105(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS13->DST105(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS13->DST106(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS13->DST106(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS13->DST107(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS13->DST107(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS13->DST108(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS13->DST108(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS13->DST109(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS13->DST109(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS13->DST110(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS13->DST110(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS13->DST111(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS13->DST111(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS14->DST112(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS14->DST112(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS14->DST113(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS14->DST113(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS14->DST114(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS14->DST114(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS14->DST115(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS14->DST115(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS14->DST116(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS14->DST116(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS14->DST117(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS14->DST117(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS14->DST118(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS14->DST118(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS14->DST119(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS14->DST119(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS15->DST120(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS15->DST120(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS15->DST121(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS15->DST121(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS15->DST122(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS15->DST122(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS15->DST123(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS15->DST123(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS15->DST124(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS15->DST124(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS15->DST125(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS15->DST125(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS15->DST126(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS15->DST126(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_LS15->DST127(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS15->DST127(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueEnq_US0->LS_0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US0->LS_0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Failure: LS0->US0(0) linkspeed set to 200
+Chosen filter for metric queueEnq_LS0->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS0->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 0 0 0: Pipe-LS0->US0(0)
+Chosen filter for metric queueEnq_US1->LS_0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US1->LS_0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 0 to 1
+Chosen filter for metric queueEnq_LS0->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS0->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 0 1 0: Pipe-LS0->US1(0)
+Chosen filter for metric queueEnq_US2->LS_0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US2->LS_0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 0 to 2
+Chosen filter for metric queueEnq_LS0->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS0->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 0 2 0: Pipe-LS0->US2(0)
+Chosen filter for metric queueEnq_US3->LS_0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US3->LS_0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 0 to 3
+Chosen filter for metric queueEnq_LS0->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS0->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 0 3 0: Pipe-LS0->US3(0)
+Chosen filter for metric queueEnq_US4->LS_0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US4->LS_0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 0 to 4
+Chosen filter for metric queueEnq_LS0->US4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS0->US4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 0 4 0: Pipe-LS0->US4(0)
+Chosen filter for metric queueEnq_US5->LS_0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US5->LS_0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 0 to 5
+Chosen filter for metric queueEnq_LS0->US5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS0->US5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 0 5 0: Pipe-LS0->US5(0)
+Chosen filter for metric queueEnq_US6->LS_0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US6->LS_0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 0 to 6
+Chosen filter for metric queueEnq_LS0->US6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS0->US6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 0 6 0: Pipe-LS0->US6(0)
+Chosen filter for metric queueEnq_US7->LS_0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US7->LS_0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 0 to 7
+Chosen filter for metric queueEnq_LS0->US7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS0->US7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 0 7 0: Pipe-LS0->US7(0)
+Chosen filter for metric queueEnq_US0->LS_1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US0->LS_1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 1 to 0
+Chosen filter for metric queueEnq_LS1->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS1->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 1 0 0: Pipe-LS1->US0(0)
+Chosen filter for metric queueEnq_US1->LS_1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US1->LS_1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 1 to 1
+Chosen filter for metric queueEnq_LS1->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS1->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 1 1 0: Pipe-LS1->US1(0)
+Chosen filter for metric queueEnq_US2->LS_1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US2->LS_1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 1 to 2
+Chosen filter for metric queueEnq_LS1->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS1->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 1 2 0: Pipe-LS1->US2(0)
+Chosen filter for metric queueEnq_US3->LS_1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US3->LS_1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 1 to 3
+Chosen filter for metric queueEnq_LS1->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS1->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 1 3 0: Pipe-LS1->US3(0)
+Chosen filter for metric queueEnq_US4->LS_1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US4->LS_1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 1 to 4
+Chosen filter for metric queueEnq_LS1->US4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS1->US4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 1 4 0: Pipe-LS1->US4(0)
+Chosen filter for metric queueEnq_US5->LS_1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US5->LS_1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 1 to 5
+Chosen filter for metric queueEnq_LS1->US5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS1->US5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 1 5 0: Pipe-LS1->US5(0)
+Chosen filter for metric queueEnq_US6->LS_1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US6->LS_1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 1 to 6
+Chosen filter for metric queueEnq_LS1->US6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS1->US6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 1 6 0: Pipe-LS1->US6(0)
+Chosen filter for metric queueEnq_US7->LS_1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US7->LS_1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 1 to 7
+Chosen filter for metric queueEnq_LS1->US7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS1->US7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 1 7 0: Pipe-LS1->US7(0)
+Chosen filter for metric queueEnq_US0->LS_2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US0->LS_2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 2 to 0
+Chosen filter for metric queueEnq_LS2->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS2->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 2 0 0: Pipe-LS2->US0(0)
+Chosen filter for metric queueEnq_US1->LS_2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US1->LS_2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 2 to 1
+Chosen filter for metric queueEnq_LS2->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS2->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 2 1 0: Pipe-LS2->US1(0)
+Chosen filter for metric queueEnq_US2->LS_2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US2->LS_2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 2 to 2
+Chosen filter for metric queueEnq_LS2->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS2->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 2 2 0: Pipe-LS2->US2(0)
+Chosen filter for metric queueEnq_US3->LS_2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US3->LS_2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 2 to 3
+Chosen filter for metric queueEnq_LS2->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS2->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 2 3 0: Pipe-LS2->US3(0)
+Chosen filter for metric queueEnq_US4->LS_2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US4->LS_2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 2 to 4
+Chosen filter for metric queueEnq_LS2->US4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS2->US4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 2 4 0: Pipe-LS2->US4(0)
+Chosen filter for metric queueEnq_US5->LS_2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US5->LS_2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 2 to 5
+Chosen filter for metric queueEnq_LS2->US5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS2->US5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 2 5 0: Pipe-LS2->US5(0)
+Chosen filter for metric queueEnq_US6->LS_2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US6->LS_2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 2 to 6
+Chosen filter for metric queueEnq_LS2->US6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS2->US6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 2 6 0: Pipe-LS2->US6(0)
+Chosen filter for metric queueEnq_US7->LS_2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US7->LS_2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 2 to 7
+Chosen filter for metric queueEnq_LS2->US7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS2->US7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 2 7 0: Pipe-LS2->US7(0)
+Chosen filter for metric queueEnq_US0->LS_3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US0->LS_3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 3 to 0
+Chosen filter for metric queueEnq_LS3->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS3->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 3 0 0: Pipe-LS3->US0(0)
+Chosen filter for metric queueEnq_US1->LS_3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US1->LS_3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 3 to 1
+Chosen filter for metric queueEnq_LS3->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS3->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 3 1 0: Pipe-LS3->US1(0)
+Chosen filter for metric queueEnq_US2->LS_3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US2->LS_3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 3 to 2
+Chosen filter for metric queueEnq_LS3->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS3->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 3 2 0: Pipe-LS3->US2(0)
+Chosen filter for metric queueEnq_US3->LS_3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US3->LS_3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 3 to 3
+Chosen filter for metric queueEnq_LS3->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS3->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 3 3 0: Pipe-LS3->US3(0)
+Chosen filter for metric queueEnq_US4->LS_3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US4->LS_3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 3 to 4
+Chosen filter for metric queueEnq_LS3->US4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS3->US4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 3 4 0: Pipe-LS3->US4(0)
+Chosen filter for metric queueEnq_US5->LS_3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US5->LS_3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 3 to 5
+Chosen filter for metric queueEnq_LS3->US5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS3->US5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 3 5 0: Pipe-LS3->US5(0)
+Chosen filter for metric queueEnq_US6->LS_3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US6->LS_3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 3 to 6
+Chosen filter for metric queueEnq_LS3->US6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS3->US6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 3 6 0: Pipe-LS3->US6(0)
+Chosen filter for metric queueEnq_US7->LS_3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US7->LS_3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 3 to 7
+Chosen filter for metric queueEnq_LS3->US7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS3->US7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 3 7 0: Pipe-LS3->US7(0)
+Chosen filter for metric queueEnq_US0->LS_4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US0->LS_4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 4 to 0
+Chosen filter for metric queueEnq_LS4->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS4->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 4 0 0: Pipe-LS4->US0(0)
+Chosen filter for metric queueEnq_US1->LS_4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US1->LS_4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 4 to 1
+Chosen filter for metric queueEnq_LS4->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS4->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 4 1 0: Pipe-LS4->US1(0)
+Chosen filter for metric queueEnq_US2->LS_4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US2->LS_4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 4 to 2
+Chosen filter for metric queueEnq_LS4->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS4->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 4 2 0: Pipe-LS4->US2(0)
+Chosen filter for metric queueEnq_US3->LS_4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US3->LS_4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 4 to 3
+Chosen filter for metric queueEnq_LS4->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS4->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 4 3 0: Pipe-LS4->US3(0)
+Chosen filter for metric queueEnq_US4->LS_4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US4->LS_4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 4 to 4
+Chosen filter for metric queueEnq_LS4->US4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS4->US4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 4 4 0: Pipe-LS4->US4(0)
+Chosen filter for metric queueEnq_US5->LS_4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US5->LS_4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 4 to 5
+Chosen filter for metric queueEnq_LS4->US5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS4->US5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 4 5 0: Pipe-LS4->US5(0)
+Chosen filter for metric queueEnq_US6->LS_4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US6->LS_4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 4 to 6
+Chosen filter for metric queueEnq_LS4->US6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS4->US6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 4 6 0: Pipe-LS4->US6(0)
+Chosen filter for metric queueEnq_US7->LS_4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US7->LS_4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 4 to 7
+Chosen filter for metric queueEnq_LS4->US7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS4->US7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 4 7 0: Pipe-LS4->US7(0)
+Chosen filter for metric queueEnq_US0->LS_5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US0->LS_5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 5 to 0
+Chosen filter for metric queueEnq_LS5->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS5->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 5 0 0: Pipe-LS5->US0(0)
+Chosen filter for metric queueEnq_US1->LS_5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US1->LS_5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 5 to 1
+Chosen filter for metric queueEnq_LS5->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS5->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 5 1 0: Pipe-LS5->US1(0)
+Chosen filter for metric queueEnq_US2->LS_5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US2->LS_5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 5 to 2
+Chosen filter for metric queueEnq_LS5->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS5->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 5 2 0: Pipe-LS5->US2(0)
+Chosen filter for metric queueEnq_US3->LS_5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US3->LS_5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 5 to 3
+Chosen filter for metric queueEnq_LS5->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS5->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 5 3 0: Pipe-LS5->US3(0)
+Chosen filter for metric queueEnq_US4->LS_5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US4->LS_5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 5 to 4
+Chosen filter for metric queueEnq_LS5->US4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS5->US4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 5 4 0: Pipe-LS5->US4(0)
+Chosen filter for metric queueEnq_US5->LS_5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US5->LS_5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 5 to 5
+Chosen filter for metric queueEnq_LS5->US5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS5->US5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 5 5 0: Pipe-LS5->US5(0)
+Chosen filter for metric queueEnq_US6->LS_5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US6->LS_5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 5 to 6
+Chosen filter for metric queueEnq_LS5->US6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS5->US6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 5 6 0: Pipe-LS5->US6(0)
+Chosen filter for metric queueEnq_US7->LS_5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US7->LS_5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 5 to 7
+Chosen filter for metric queueEnq_LS5->US7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS5->US7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 5 7 0: Pipe-LS5->US7(0)
+Chosen filter for metric queueEnq_US0->LS_6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US0->LS_6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 6 to 0
+Chosen filter for metric queueEnq_LS6->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS6->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 6 0 0: Pipe-LS6->US0(0)
+Chosen filter for metric queueEnq_US1->LS_6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US1->LS_6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 6 to 1
+Chosen filter for metric queueEnq_LS6->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS6->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 6 1 0: Pipe-LS6->US1(0)
+Chosen filter for metric queueEnq_US2->LS_6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US2->LS_6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 6 to 2
+Chosen filter for metric queueEnq_LS6->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS6->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 6 2 0: Pipe-LS6->US2(0)
+Chosen filter for metric queueEnq_US3->LS_6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US3->LS_6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 6 to 3
+Chosen filter for metric queueEnq_LS6->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS6->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 6 3 0: Pipe-LS6->US3(0)
+Chosen filter for metric queueEnq_US4->LS_6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US4->LS_6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 6 to 4
+Chosen filter for metric queueEnq_LS6->US4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS6->US4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 6 4 0: Pipe-LS6->US4(0)
+Chosen filter for metric queueEnq_US5->LS_6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US5->LS_6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 6 to 5
+Chosen filter for metric queueEnq_LS6->US5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS6->US5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 6 5 0: Pipe-LS6->US5(0)
+Chosen filter for metric queueEnq_US6->LS_6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US6->LS_6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 6 to 6
+Chosen filter for metric queueEnq_LS6->US6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS6->US6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 6 6 0: Pipe-LS6->US6(0)
+Chosen filter for metric queueEnq_US7->LS_6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US7->LS_6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 6 to 7
+Chosen filter for metric queueEnq_LS6->US7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS6->US7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 6 7 0: Pipe-LS6->US7(0)
+Chosen filter for metric queueEnq_US0->LS_7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US0->LS_7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 7 to 0
+Chosen filter for metric queueEnq_LS7->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS7->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 7 0 0: Pipe-LS7->US0(0)
+Chosen filter for metric queueEnq_US1->LS_7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US1->LS_7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 7 to 1
+Chosen filter for metric queueEnq_LS7->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS7->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 7 1 0: Pipe-LS7->US1(0)
+Chosen filter for metric queueEnq_US2->LS_7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US2->LS_7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 7 to 2
+Chosen filter for metric queueEnq_LS7->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS7->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 7 2 0: Pipe-LS7->US2(0)
+Chosen filter for metric queueEnq_US3->LS_7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US3->LS_7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 7 to 3
+Chosen filter for metric queueEnq_LS7->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS7->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 7 3 0: Pipe-LS7->US3(0)
+Chosen filter for metric queueEnq_US4->LS_7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US4->LS_7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 7 to 4
+Chosen filter for metric queueEnq_LS7->US4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS7->US4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 7 4 0: Pipe-LS7->US4(0)
+Chosen filter for metric queueEnq_US5->LS_7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US5->LS_7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 7 to 5
+Chosen filter for metric queueEnq_LS7->US5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS7->US5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 7 5 0: Pipe-LS7->US5(0)
+Chosen filter for metric queueEnq_US6->LS_7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US6->LS_7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 7 to 6
+Chosen filter for metric queueEnq_LS7->US6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS7->US6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 7 6 0: Pipe-LS7->US6(0)
+Chosen filter for metric queueEnq_US7->LS_7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US7->LS_7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 7 to 7
+Chosen filter for metric queueEnq_LS7->US7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS7->US7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 7 7 0: Pipe-LS7->US7(0)
+Chosen filter for metric queueEnq_US0->LS_8(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US0->LS_8(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 8 to 0
+Chosen filter for metric queueEnq_LS8->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS8->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 8 0 0: Pipe-LS8->US0(0)
+Chosen filter for metric queueEnq_US1->LS_8(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US1->LS_8(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 8 to 1
+Chosen filter for metric queueEnq_LS8->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS8->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 8 1 0: Pipe-LS8->US1(0)
+Chosen filter for metric queueEnq_US2->LS_8(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US2->LS_8(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 8 to 2
+Chosen filter for metric queueEnq_LS8->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS8->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 8 2 0: Pipe-LS8->US2(0)
+Chosen filter for metric queueEnq_US3->LS_8(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US3->LS_8(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 8 to 3
+Chosen filter for metric queueEnq_LS8->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS8->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 8 3 0: Pipe-LS8->US3(0)
+Chosen filter for metric queueEnq_US4->LS_8(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US4->LS_8(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 8 to 4
+Chosen filter for metric queueEnq_LS8->US4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS8->US4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 8 4 0: Pipe-LS8->US4(0)
+Chosen filter for metric queueEnq_US5->LS_8(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US5->LS_8(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 8 to 5
+Chosen filter for metric queueEnq_LS8->US5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS8->US5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 8 5 0: Pipe-LS8->US5(0)
+Chosen filter for metric queueEnq_US6->LS_8(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US6->LS_8(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 8 to 6
+Chosen filter for metric queueEnq_LS8->US6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS8->US6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 8 6 0: Pipe-LS8->US6(0)
+Chosen filter for metric queueEnq_US7->LS_8(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US7->LS_8(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 8 to 7
+Chosen filter for metric queueEnq_LS8->US7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS8->US7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 8 7 0: Pipe-LS8->US7(0)
+Chosen filter for metric queueEnq_US0->LS_9(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US0->LS_9(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 9 to 0
+Chosen filter for metric queueEnq_LS9->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS9->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 9 0 0: Pipe-LS9->US0(0)
+Chosen filter for metric queueEnq_US1->LS_9(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US1->LS_9(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 9 to 1
+Chosen filter for metric queueEnq_LS9->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS9->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 9 1 0: Pipe-LS9->US1(0)
+Chosen filter for metric queueEnq_US2->LS_9(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US2->LS_9(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 9 to 2
+Chosen filter for metric queueEnq_LS9->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS9->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 9 2 0: Pipe-LS9->US2(0)
+Chosen filter for metric queueEnq_US3->LS_9(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US3->LS_9(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 9 to 3
+Chosen filter for metric queueEnq_LS9->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS9->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 9 3 0: Pipe-LS9->US3(0)
+Chosen filter for metric queueEnq_US4->LS_9(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US4->LS_9(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 9 to 4
+Chosen filter for metric queueEnq_LS9->US4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS9->US4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 9 4 0: Pipe-LS9->US4(0)
+Chosen filter for metric queueEnq_US5->LS_9(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US5->LS_9(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 9 to 5
+Chosen filter for metric queueEnq_LS9->US5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS9->US5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 9 5 0: Pipe-LS9->US5(0)
+Chosen filter for metric queueEnq_US6->LS_9(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US6->LS_9(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 9 to 6
+Chosen filter for metric queueEnq_LS9->US6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS9->US6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 9 6 0: Pipe-LS9->US6(0)
+Chosen filter for metric queueEnq_US7->LS_9(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US7->LS_9(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 9 to 7
+Chosen filter for metric queueEnq_LS9->US7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS9->US7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 9 7 0: Pipe-LS9->US7(0)
+Chosen filter for metric queueEnq_US0->LS_10(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US0->LS_10(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 10 to 0
+Chosen filter for metric queueEnq_LS10->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS10->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 10 0 0: Pipe-LS10->US0(0)
+Chosen filter for metric queueEnq_US1->LS_10(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US1->LS_10(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 10 to 1
+Chosen filter for metric queueEnq_LS10->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS10->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 10 1 0: Pipe-LS10->US1(0)
+Chosen filter for metric queueEnq_US2->LS_10(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US2->LS_10(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 10 to 2
+Chosen filter for metric queueEnq_LS10->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS10->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 10 2 0: Pipe-LS10->US2(0)
+Chosen filter for metric queueEnq_US3->LS_10(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US3->LS_10(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 10 to 3
+Chosen filter for metric queueEnq_LS10->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS10->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 10 3 0: Pipe-LS10->US3(0)
+Chosen filter for metric queueEnq_US4->LS_10(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US4->LS_10(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 10 to 4
+Chosen filter for metric queueEnq_LS10->US4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS10->US4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 10 4 0: Pipe-LS10->US4(0)
+Chosen filter for metric queueEnq_US5->LS_10(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US5->LS_10(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 10 to 5
+Chosen filter for metric queueEnq_LS10->US5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS10->US5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 10 5 0: Pipe-LS10->US5(0)
+Chosen filter for metric queueEnq_US6->LS_10(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US6->LS_10(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 10 to 6
+Chosen filter for metric queueEnq_LS10->US6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS10->US6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 10 6 0: Pipe-LS10->US6(0)
+Chosen filter for metric queueEnq_US7->LS_10(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US7->LS_10(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 10 to 7
+Chosen filter for metric queueEnq_LS10->US7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS10->US7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 10 7 0: Pipe-LS10->US7(0)
+Chosen filter for metric queueEnq_US0->LS_11(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US0->LS_11(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 11 to 0
+Chosen filter for metric queueEnq_LS11->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS11->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 11 0 0: Pipe-LS11->US0(0)
+Chosen filter for metric queueEnq_US1->LS_11(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US1->LS_11(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 11 to 1
+Chosen filter for metric queueEnq_LS11->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS11->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 11 1 0: Pipe-LS11->US1(0)
+Chosen filter for metric queueEnq_US2->LS_11(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US2->LS_11(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 11 to 2
+Chosen filter for metric queueEnq_LS11->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS11->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 11 2 0: Pipe-LS11->US2(0)
+Chosen filter for metric queueEnq_US3->LS_11(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US3->LS_11(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 11 to 3
+Chosen filter for metric queueEnq_LS11->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS11->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 11 3 0: Pipe-LS11->US3(0)
+Chosen filter for metric queueEnq_US4->LS_11(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US4->LS_11(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 11 to 4
+Chosen filter for metric queueEnq_LS11->US4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS11->US4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 11 4 0: Pipe-LS11->US4(0)
+Chosen filter for metric queueEnq_US5->LS_11(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US5->LS_11(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 11 to 5
+Chosen filter for metric queueEnq_LS11->US5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS11->US5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 11 5 0: Pipe-LS11->US5(0)
+Chosen filter for metric queueEnq_US6->LS_11(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US6->LS_11(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 11 to 6
+Chosen filter for metric queueEnq_LS11->US6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS11->US6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 11 6 0: Pipe-LS11->US6(0)
+Chosen filter for metric queueEnq_US7->LS_11(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US7->LS_11(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 11 to 7
+Chosen filter for metric queueEnq_LS11->US7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS11->US7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 11 7 0: Pipe-LS11->US7(0)
+Chosen filter for metric queueEnq_US0->LS_12(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US0->LS_12(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 12 to 0
+Chosen filter for metric queueEnq_LS12->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS12->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 12 0 0: Pipe-LS12->US0(0)
+Chosen filter for metric queueEnq_US1->LS_12(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US1->LS_12(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 12 to 1
+Chosen filter for metric queueEnq_LS12->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS12->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 12 1 0: Pipe-LS12->US1(0)
+Chosen filter for metric queueEnq_US2->LS_12(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US2->LS_12(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 12 to 2
+Chosen filter for metric queueEnq_LS12->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS12->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 12 2 0: Pipe-LS12->US2(0)
+Chosen filter for metric queueEnq_US3->LS_12(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US3->LS_12(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 12 to 3
+Chosen filter for metric queueEnq_LS12->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS12->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 12 3 0: Pipe-LS12->US3(0)
+Chosen filter for metric queueEnq_US4->LS_12(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US4->LS_12(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 12 to 4
+Chosen filter for metric queueEnq_LS12->US4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS12->US4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 12 4 0: Pipe-LS12->US4(0)
+Chosen filter for metric queueEnq_US5->LS_12(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US5->LS_12(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 12 to 5
+Chosen filter for metric queueEnq_LS12->US5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS12->US5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 12 5 0: Pipe-LS12->US5(0)
+Chosen filter for metric queueEnq_US6->LS_12(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US6->LS_12(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 12 to 6
+Chosen filter for metric queueEnq_LS12->US6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS12->US6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 12 6 0: Pipe-LS12->US6(0)
+Chosen filter for metric queueEnq_US7->LS_12(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US7->LS_12(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 12 to 7
+Chosen filter for metric queueEnq_LS12->US7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS12->US7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 12 7 0: Pipe-LS12->US7(0)
+Chosen filter for metric queueEnq_US0->LS_13(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US0->LS_13(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 13 to 0
+Chosen filter for metric queueEnq_LS13->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS13->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 13 0 0: Pipe-LS13->US0(0)
+Chosen filter for metric queueEnq_US1->LS_13(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US1->LS_13(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 13 to 1
+Chosen filter for metric queueEnq_LS13->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS13->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 13 1 0: Pipe-LS13->US1(0)
+Chosen filter for metric queueEnq_US2->LS_13(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US2->LS_13(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 13 to 2
+Chosen filter for metric queueEnq_LS13->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS13->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 13 2 0: Pipe-LS13->US2(0)
+Chosen filter for metric queueEnq_US3->LS_13(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US3->LS_13(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 13 to 3
+Chosen filter for metric queueEnq_LS13->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS13->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 13 3 0: Pipe-LS13->US3(0)
+Chosen filter for metric queueEnq_US4->LS_13(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US4->LS_13(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 13 to 4
+Chosen filter for metric queueEnq_LS13->US4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS13->US4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 13 4 0: Pipe-LS13->US4(0)
+Chosen filter for metric queueEnq_US5->LS_13(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US5->LS_13(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 13 to 5
+Chosen filter for metric queueEnq_LS13->US5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS13->US5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 13 5 0: Pipe-LS13->US5(0)
+Chosen filter for metric queueEnq_US6->LS_13(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US6->LS_13(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 13 to 6
+Chosen filter for metric queueEnq_LS13->US6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS13->US6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 13 6 0: Pipe-LS13->US6(0)
+Chosen filter for metric queueEnq_US7->LS_13(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US7->LS_13(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 13 to 7
+Chosen filter for metric queueEnq_LS13->US7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS13->US7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 13 7 0: Pipe-LS13->US7(0)
+Chosen filter for metric queueEnq_US0->LS_14(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US0->LS_14(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 14 to 0
+Chosen filter for metric queueEnq_LS14->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS14->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 14 0 0: Pipe-LS14->US0(0)
+Chosen filter for metric queueEnq_US1->LS_14(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US1->LS_14(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 14 to 1
+Chosen filter for metric queueEnq_LS14->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS14->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 14 1 0: Pipe-LS14->US1(0)
+Chosen filter for metric queueEnq_US2->LS_14(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US2->LS_14(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 14 to 2
+Chosen filter for metric queueEnq_LS14->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS14->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 14 2 0: Pipe-LS14->US2(0)
+Chosen filter for metric queueEnq_US3->LS_14(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US3->LS_14(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 14 to 3
+Chosen filter for metric queueEnq_LS14->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS14->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 14 3 0: Pipe-LS14->US3(0)
+Chosen filter for metric queueEnq_US4->LS_14(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US4->LS_14(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 14 to 4
+Chosen filter for metric queueEnq_LS14->US4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS14->US4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 14 4 0: Pipe-LS14->US4(0)
+Chosen filter for metric queueEnq_US5->LS_14(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US5->LS_14(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 14 to 5
+Chosen filter for metric queueEnq_LS14->US5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS14->US5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 14 5 0: Pipe-LS14->US5(0)
+Chosen filter for metric queueEnq_US6->LS_14(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US6->LS_14(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 14 to 6
+Chosen filter for metric queueEnq_LS14->US6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS14->US6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 14 6 0: Pipe-LS14->US6(0)
+Chosen filter for metric queueEnq_US7->LS_14(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US7->LS_14(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 14 to 7
+Chosen filter for metric queueEnq_LS14->US7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS14->US7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 14 7 0: Pipe-LS14->US7(0)
+Chosen filter for metric queueEnq_US0->LS_15(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US0->LS_15(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 15 to 0
+Chosen filter for metric queueEnq_LS15->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS15->US0(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 15 0 0: Pipe-LS15->US0(0)
+Chosen filter for metric queueEnq_US1->LS_15(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US1->LS_15(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 15 to 1
+Chosen filter for metric queueEnq_LS15->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS15->US1(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 15 1 0: Pipe-LS15->US1(0)
+Chosen filter for metric queueEnq_US2->LS_15(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US2->LS_15(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 15 to 2
+Chosen filter for metric queueEnq_LS15->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS15->US2(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 15 2 0: Pipe-LS15->US2(0)
+Chosen filter for metric queueEnq_US3->LS_15(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US3->LS_15(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 15 to 3
+Chosen filter for metric queueEnq_LS15->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS15->US3(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 15 3 0: Pipe-LS15->US3(0)
+Chosen filter for metric queueEnq_US4->LS_15(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US4->LS_15(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 15 to 4
+Chosen filter for metric queueEnq_LS15->US4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS15->US4(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 15 4 0: Pipe-LS15->US4(0)
+Chosen filter for metric queueEnq_US5->LS_15(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US5->LS_15(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 15 to 5
+Chosen filter for metric queueEnq_LS15->US5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS15->US5(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 15 5 0: Pipe-LS15->US5(0)
+Chosen filter for metric queueEnq_US6->LS_15(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US6->LS_15(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 15 to 6
+Chosen filter for metric queueEnq_LS15->US6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS15->US6(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 15 6 0: Pipe-LS15->US6(0)
+Chosen filter for metric queueEnq_US7->LS_15(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_US7->LS_15(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Allocating ToR 15 to 7
+Chosen filter for metric queueEnq_LS15->US7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Chosen filter for metric queueDeq_LS15->US7(0): Filter: regex=.*, enabled=1, downsampling_ratio=1
+Creating New Pipe 15 7 0: Pipe-LS15->US7(0)
+cable and switch failure lists 0 0...
+Creating2 New Pipe: Pipe-LS0->US0(0)
+Reaching 1
+Reaching 2 0 0
+FatTree constructor done, 128 nodes created
+network_max_unloaded_rtt 8.33712
+Setting queuesize to 415000
+Setting min RTO to 41.5371
+Initializing static NSCC parameters: _reference_network_linkspeed=100000000000 _reference_network_rtt=12000000 _reference_network_bdp=150000 _target_Qdelay=6000000 _network_linkspeed=400000000000 _network_rtt=8337120 _network_bdp=416856 _qa_threshold=2.4e+07 _scaling_factor_a=2.77904 _scaling_factor_b=0.5 _alpha=0.00379432 _fi=13.8952 _eta=1707.44 _qa_scaling=1 _gamma=0.8 _pi=13895 _fi_scale=0.69476 _delay_alpha=0.0125 _adjust_period_threshold=12000000 _adjust_bytes_threshold=8000
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000001 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=626650
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000003 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=626650
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000005 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=626650
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000007 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=626650
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000009 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=626650
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000011 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=626650
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000013 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=626650
+base_rtt_bw_two_points 8.33712
+Initialize per-instance NSCC parameters: flowid 1000000015 _base_rtt=8337120 _base_bdp=416856 _bdp=416856 _maxwnd=625284 _cwnd=626650
+Starting simulation
+Flow Uec_0_64 flowId 1000000001 uecSrc 0 starting at 0
+Flow Uec_1_65 flowId 1000000003 uecSrc 1 starting at 0
+Flow Uec_2_66 flowId 1000000005 uecSrc 2 starting at 0
+Flow Uec_3_67 flowId 1000000007 uecSrc 3 starting at 0
+Flow Uec_4_68 flowId 1000000009 uecSrc 4 starting at 0
+Flow Uec_5_69 flowId 1000000011 uecSrc 5 starting at 0
+Flow Uec_6_70 flowId 1000000013 uecSrc 6 starting at 0
+Flow Uec_7_71 flowId 1000000015 uecSrc 7 starting at 0
+Flow Uec_5_69 flowId 1000000011 uecSrc 5 finished at 365.237 flowSize 16777216 total packets 4107 RTS 0 total bytes 16781202 in_flight now 0 cwnd 502493 sim time 365.237 bg traffic 0
+Flow Uec_6_70 flowId 1000000013 uecSrc 6 finished at 368.389 flowSize 16777216 total packets 4107 RTS 0 total bytes 16781202 in_flight now 0 cwnd 479687 sim time 368.389 bg traffic 0
+Flow Uec_4_68 flowId 1000000009 uecSrc 4 finished at 369.677 flowSize 16777216 total packets 4107 RTS 0 total bytes 16781202 in_flight now 0 cwnd 479665 sim time 369.677 bg traffic 0
+Flow Uec_2_66 flowId 1000000005 uecSrc 2 finished at 370.427 flowSize 16777216 total packets 4107 RTS 0 total bytes 16781202 in_flight now 0 cwnd 486865 sim time 370.427 bg traffic 0
+Flow Uec_3_67 flowId 1000000007 uecSrc 3 finished at 371.756 flowSize 16777216 total packets 4107 RTS 0 total bytes 16781202 in_flight now 0 cwnd 472701 sim time 371.756 bg traffic 0
+Flow Uec_7_71 flowId 1000000015 uecSrc 7 finished at 373.12 flowSize 16777216 total packets 4107 RTS 0 total bytes 16781202 in_flight now 0 cwnd 471132 sim time 373.12 bg traffic 0
+Flow Uec_0_64 flowId 1000000001 uecSrc 0 finished at 380.756 flowSize 16777216 total packets 4107 RTS 0 total bytes 16781202 in_flight now 0 cwnd 456319 sim time 380.756 bg traffic 0
+Flow Uec_1_65 flowId 1000000003 uecSrc 1 finished at 380.886 flowSize 16777216 total packets 4107 RTS 0 total bytes 16781202 in_flight now 0 cwnd 472472 sim time 380.886 bg traffic 0
+.Done
+New: 0 Rtx: 0 RTS: 0 Bounced: 0 ACKs: 0

@@ -30,6 +30,12 @@ class UecLogger;
 
 
 
+// [GAP-REPS instr] Comment only, code unchanged (upstream).
+// State carried between flows with the same "<src>_<dst>" key (CONNECTION_INFO_MAP, common.cpp)
+// when -connections_mapping is set. Saved in UecSrc::checkFinished(), restored in
+// UecSrc::startFlow(). The REPS buffer pointer itself is handed over (not copied), so a later
+// flow between the same pair starts with the previous flow's learned EVs: the existing
+// "reuse across gaps" baseline. stop_time = when the previous flow finished (gap start).
 class ConnectionInfo {
 public:
     simtime_picosec stop_time;
@@ -300,6 +306,33 @@ public:
     uint32_t _acks_received;
     uint32_t _src_dest_id_hash;
 
+    // [GAP-REPS instr] Per-flow counters for REPS (-load_balancing_algo freezing) only.
+    // Purpose: measure cold start, random-vs-cached EV usage and ECN impact on the REPS cache.
+    // Observational only: incremented at existing decision points, never read by the datapath.
+    struct RepsStats {
+        uint64_t packets_sent = 0;          // every nextEntropy() call (data, rtx, RTS)
+        uint64_t random_ev_packets = 0;
+        uint64_t cached_ev_packets = 0;
+        uint64_t ack_ecn = 0;
+        uint64_t ack_no_ecn = 0;
+        uint64_t cache_inserts = 0;
+        uint64_t cache_reuses = 0;          // equals cached_ev_packets: each cached send consumes one entry
+        uint64_t cache_empty_sends = 0;     // random EV because buffer empty / no fresh EVs
+        uint64_t explore_sends = 0;         // random EV because explore_counter > 0
+        uint64_t frozen_stale_sends = 0;    // frozen-mode replay of an entry already invalid
+        uint64_t freeze_entries = 0;
+        uint64_t freeze_exits = 0;
+        // [GAP-REPS instr] Inherited-state snapshot (all algorithms): separates the cwnd
+        // carry-over of -connections_mapping from the REPS buffer carry-over.
+        bool inherited = false;             // state restored from CONNECTION_INFO_MAP at start
+        bool started_frozen = false;        // REPS buffer already in frozen mode at start
+        mem_b cwnd_start = 0;               // bytes, after the mapping restore
+        mem_b cwnd_min = 0;                 // bytes, lowest value after any cwnd update
+    };
+    RepsStats _reps_stats;                  // [GAP-REPS instr] one set per UecSrc (= per flow)
+    static std::string _reps_stats_csv;     // [GAP-REPS instr] set by -reps_stats_csv; empty = no CSV output
+    static void writeRepsStatsUnfinished(); // [GAP-REPS instr] called once at sim end for flows that never finished
+
     simtime_picosec last_received_ack_timestamp = 0;
 
     static bool _debug;
@@ -308,6 +341,10 @@ public:
     bool debug() const { return _debug_src; }
 
    private:
+    // [GAP-REPS instr] Writes this flow's single CSV row (at most once per UecSrc).
+    void writeRepsStatsRow(bool finished);
+    bool _reps_stats_written = false;
+
     UecNIC& _nic;
     uint32_t _no_of_ports;
     vector <UecSrcPort*> _ports;

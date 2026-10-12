@@ -191,7 +191,13 @@ int main(int argc, char **argv) {
         } else if (!strcmp(argv[i],"-other_location")) {
             FAILURE_GENERATOR->other_loc = true;
         } else if (!strcmp(argv[i],"-connections_mapping")) {
+            // [GAP-REPS instr] Comment only (upstream flag): later flows with the same src/dst
+            // inherit the previous flow's REPS buffer and cwnd (see ConnectionInfo in uec.h).
             UecSrc::_connections_mapping = true;
+        } else if (!strcmp(argv[i],"-reps_stats_csv")) {
+            // [GAP-REPS instr] Output path for per-flow REPS counters CSV. Off when not given.
+            UecSrc::_reps_stats_csv = argv[i+1];
+            i++;
         } else if (!strcmp(argv[i],"-log_link")) {
             FatTreeSwitch::_log_link_utilization = true;
             Pipe::_log_link_utilization = true;
@@ -1081,6 +1087,7 @@ int main(int argc, char **argv) {
     }
 
     cout << "Done" << endl;
+    UecSrc::writeRepsStatsUnfinished();  // [GAP-REPS instr] rows for flows still running at -end, close CSV
     int new_pkts = 0, rtx_pkts = 0, bounce_pkts = 0, rts_pkts = 0, ack_pkts = 0;
     for (size_t ix = 0; ix < uec_srcs.size(); ix++) {
         new_pkts += uec_srcs[ix]->_new_packets_sent;

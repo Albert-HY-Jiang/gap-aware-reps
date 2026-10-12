@@ -7,6 +7,8 @@
 #include "pciemodel.h"
 #include "failuregenerator.h"
 #include "data_collector.h"
+#include <fstream>   // [GAP-REPS instr] REPS stats CSV
+#include <vector>    // [GAP-REPS instr] registry of started flows
 
 using namespace std;
 
@@ -41,6 +43,11 @@ int UecSrc::_num_mp_flows = 1;
 bool UecSrc::_collect_data = false;
 bool UecSrc::_save_rtt = false; 
 bool UecSrc::_connections_mapping = false; 
+// [GAP-REPS instr] REPS stats CSV: one shared file per simulation, opened lazily on the first
+// row, never flushed per row. reps_stats_srcs lists started flows (for unfinished-flow rows).
+std::string UecSrc::_reps_stats_csv = "";
+static std::ofstream reps_stats_out;
+static std::vector<UecSrc*> reps_stats_srcs;
 
 
 bool UecSrc::_debug = false;
@@ -971,6 +978,9 @@ bool UecSrc::checkFinished(UecDataPacket::seq_t cum_ack) {
         }
 
 
+        // [GAP-REPS instr] Comment only, code unchanged (upstream).
+        // Connection mapping, save side: park this flow's REPS buffer (and cwnd etc.) under
+        // "<src>_<dst>" so the next flow between the same pair can inherit it in startFlow().
         if (_connections_mapping) {
             CONNECTION_INFO_MAP[_src_dst].buffer = circular_buffer_reps;
             CONNECTION_INFO_MAP[_src_dst].cwnd = _cwnd;
@@ -981,6 +991,9 @@ bool UecSrc::checkFinished(UecDataPacket::seq_t cum_ack) {
             CONNECTION_INFO_MAP[_src_dst].working_path_ecmp_mp = working_path_ecmp_mp;
         }
         
+
+        // [GAP-REPS instr] Flow finished: emit its one-row REPS summary (no-op without -reps_stats_csv).
+        writeRepsStatsRow(true);
 
         if (_end_trigger) {
             _end_trigger->activate();
@@ -993,6 +1006,45 @@ bool UecSrc::checkFinished(UecDataPacket::seq_t cum_ack) {
         return true;
     }
     return false;
+}
+
+// [GAP-REPS instr] Write this flow's summary row. finished=false (sim ended first) -> finish_time_us = -1.
+void UecSrc::writeRepsStatsRow(bool finished) {
+    if (_reps_stats_csv.empty() || _reps_stats_written)
+        return;
+    if (!reps_stats_out.is_open()) {
+        reps_stats_out.open(_reps_stats_csv, std::ios::trunc);
+        if (!reps_stats_out) {
+            cerr << "Cannot open REPS stats file " << _reps_stats_csv << endl;
+            _reps_stats_csv.clear();
+            return;
+        }
+        reps_stats_out << "flow_id,name,src,dst,start_time_us,finish_time_us,packets_sent,"
+                          "random_ev_packets,cached_ev_packets,ack_ecn,ack_no_ecn,cache_inserts,"
+                          "cache_reuses,cache_empty_sends,explore_sends,frozen_stale_sends,"
+                          "freeze_entries,freeze_exits,inherited,started_frozen,cwnd_start,"
+                          "cwnd_end,cwnd_min,maxwnd\n";
+    }
+    _reps_stats_written = true;
+    const RepsStats& s = _reps_stats;
+    reps_stats_out << flowId() << ',' << _name << ',' << _srcaddr << ',' << _dstaddr << ','
+                   << timeAsUs(_flow_start_time) << ','
+                   << (finished ? timeAsUs(eventlist().now()) : -1.0) << ',' << s.packets_sent
+                   << ',' << s.random_ev_packets << ',' << s.cached_ev_packets << ',' << s.ack_ecn
+                   << ',' << s.ack_no_ecn << ',' << s.cache_inserts << ',' << s.cache_reuses << ','
+                   << s.cache_empty_sends << ',' << s.explore_sends << ','
+                   << s.frozen_stale_sends << ',' << s.freeze_entries << ',' << s.freeze_exits
+                   << ',' << s.inherited << ',' << s.started_frozen << ',' << s.cwnd_start
+                   << ',' << _cwnd << ',' << s.cwnd_min << ',' << _maxwnd   // cwnd_end = now
+                   << '\n';
+}
+
+// [GAP-REPS instr] Called from main_uec.cpp after the event loop: rows for unfinished flows, then close.
+void UecSrc::writeRepsStatsUnfinished() {
+    for (UecSrc* src : reps_stats_srcs)
+        src->writeRepsStatsRow(false);
+    if (reps_stats_out.is_open())
+        reps_stats_out.close();
 }
 
 void UecSrc::processAck(const UecAckPacket& pkt) {
@@ -1159,6 +1211,8 @@ void UecSrc::processAck(const UecAckPacket& pkt) {
         }
         else */
         (this->*updateCwndOnAck)(pkt.ecn_echo(), delay, newly_recvd_bytes);
+        if (_cwnd < _reps_stats.cwnd_min)                       // [GAP-REPS instr] track cwnd dip
+            _reps_stats.cwnd_min = _cwnd;
     }
 
     if (_load_balancing_algo == MPRDMA) {
@@ -1906,6 +1960,8 @@ void UecSrc::processNack(const UecNackPacket& pkt) {
     }
     if (_sender_based_cc){
         (this->*updateCwndOnNack)(ev, pkt_size);
+        if (_cwnd < _reps_stats.cwnd_min)                       // [GAP-REPS instr] track cwnd dip
+            _reps_stats.cwnd_min = _cwnd;
     }
 
     if (_debug_src)
@@ -1969,9 +2025,18 @@ void UecSrc::setFlowsize(uint64_t flow_size_in_bytes) {
 
 void UecSrc::startFlow() {
     _flow_start_time = eventlist().now();
+    // [GAP-REPS instr] Remember started flows so unfinished ones still get a CSV row at sim end.
+    if (!_reps_stats_csv.empty())
+        reps_stats_srcs.push_back(this);
     //_cwnd = _maxwnd;
     _credit = _maxwnd;
 
+    // [GAP-REPS instr] Comment only, code unchanged (upstream).
+    // Connection mapping, restore side. Without -connections_mapping (or for the first flow of a
+    // src/dst pair) REPS starts cold with an empty buffer. With it, the flow takes over the
+    // previous same-pair flow's buffer object as-is, however long the idle gap was: warm start,
+    // no freshness check. Our per-flow counters are NOT inherited, so cache_empty_sends of an
+    // inheriting flow directly shows how much cold start the carried-over buffer avoided.
 
     if (CONNECTION_INFO_MAP.find(_src_dst) == CONNECTION_INFO_MAP.end() || !_connections_mapping) {
         circular_buffer_reps = new CircularBufferREPS<int>(CircularBufferREPS<int>::repsBufferSize);
@@ -1983,7 +2048,12 @@ void UecSrc::startFlow() {
         flowlet_entropy = CONNECTION_INFO_MAP[_src_dst].flowlet_entropy;
         _ev_skip_bitmap = CONNECTION_INFO_MAP[_src_dst].ev_skip_bitmap;
         working_path_ecmp_mp = CONNECTION_INFO_MAP[_src_dst].working_path_ecmp_mp;
+        _reps_stats.inherited = true;                           // [GAP-REPS instr]
     }
+    // [GAP-REPS instr] Snapshot of the state this flow starts with (cold or inherited).
+    _reps_stats.started_frozen = circular_buffer_reps->isFrozenMode();
+    _reps_stats.cwnd_start = _cwnd;
+    _reps_stats.cwnd_min = _cwnd;
     
 
     if (_debug_src)
@@ -2385,41 +2455,66 @@ void UecSrc::processEv_ecmp(uint16_t path_id, PathFeedback feedback) {
 }
 
 
+// [GAP-REPS instr] REPS send-side EV selection, called once per data/rtx/RTS send.
+// Counter increments were added to each existing branch; branch logic and rand() order unchanged.
 uint16_t UecSrc::nextEntropy_freezing(){
+    _reps_stats.packets_sent++;                                 // [GAP-REPS instr] every send
     if (circular_buffer_reps->explore_counter > 0) {
         circular_buffer_reps->explore_counter--;
+        _reps_stats.random_ev_packets++;                        // [GAP-REPS instr] random: forced exploration
+        _reps_stats.explore_sends++;                            //   (only after a freeze exit)
         return rand() % _no_of_paths;
     }
 
     if (circular_buffer_reps->isFrozenMode()) {
         if (circular_buffer_reps->isEmpty()) {
+            _reps_stats.random_ev_packets++;                    // [GAP-REPS instr] random: frozen, buffer empty
+            _reps_stats.cache_empty_sends++;
             return rand() % _no_of_paths;
         } else {
+            _reps_stats.cached_ev_packets++;                    // [GAP-REPS instr] cached: frozen replay
+            _reps_stats.cache_reuses++;
+            if (!circular_buffer_reps->is_valid_frozen())       // [GAP-REPS instr] read-only peek: replayed
+                _reps_stats.frozen_stale_sends++;               //   slot was already consumed/invalid
             return circular_buffer_reps->remove_frozen();
         }
     } else {
         if (circular_buffer_reps->isEmpty() || circular_buffer_reps->getNumberFreshEntropies() == 0) {
+            _reps_stats.random_ev_packets++;                    // [GAP-REPS instr] random: no fresh EV
+            _reps_stats.cache_empty_sends++;                    //   (cold start / cache drained by ECN)
             return _crt_path = rand() % _no_of_paths;
         } else {
+            _reps_stats.cached_ev_packets++;                    // [GAP-REPS instr] cached: recycle oldest
+            _reps_stats.cache_reuses++;                         //   fresh EV
             return circular_buffer_reps->remove_earliest_fresh();
         }
     }
 }
 
+// [GAP-REPS instr] REPS ACK-side feedback. Counter increments added; logic unchanged.
 void UecSrc::processEv_freezing(uint16_t path_id, PathFeedback feedback) {
+    // [GAP-REPS instr] Classify ACK by ECN echo. PATH_GOOD / PATH_ECN only arrive from
+    // processAck; NACKs arrive as PATH_NACK and are not counted as ACKs.
+    if (feedback == PATH_ECN)
+        _reps_stats.ack_ecn++;
+    else if (feedback == PATH_GOOD)
+        _reps_stats.ack_no_ecn++;
 
     if (circular_buffer_reps->isFrozenMode() && eventlist().now() > circular_buffer_reps->can_exit_frozen_mode) {
         circular_buffer_reps->setFrozenMode(false);
         circular_buffer_reps->resetBuffer();
         circular_buffer_reps->explore_counter = _bdp / _mtu;
         //circular_buffer_reps->explore_counter = 8;
+        _reps_stats.freeze_exits++;                             // [GAP-REPS instr] freeze timeout: buffer wiped
         printf("%s exited freezing mode at %lu\n", _name.c_str(), eventlist().now() / 1000); 
     }
 
     if ((feedback == PATH_GOOD) && !circular_buffer_reps->isFrozenMode()) {
         circular_buffer_reps->add(path_id);
+        _reps_stats.cache_inserts++;                            // [GAP-REPS instr] unmarked ACK -> EV cached
     } else if (circular_buffer_reps->isFrozenMode() && (feedback == PATH_GOOD)) {
         circular_buffer_reps->add(path_id);
+        _reps_stats.cache_inserts++;                            // [GAP-REPS instr] same, while frozen
     }
 }
 
@@ -2798,11 +2893,17 @@ void UecSrc::rtxTimerExpired() {
     if ((_load_balancing_algo == FREEZING) && !circular_buffer_reps->isFrozenMode() && circular_buffer_reps->explore_counter == 0) {
         if (_trim_disbled && _last_rto_max_rtt < _base_rtt * 1.65) {
             circular_buffer_reps->setFrozenMode(true);
+            // [GAP-REPS instr] Count freeze entry; setFrozenMode is a no-op under -freezeoff.
+            if (circular_buffer_reps->isFrozenMode())
+                _reps_stats.freeze_entries++;
             circular_buffer_reps->can_exit_frozen_mode = eventlist().now() +  circular_buffer_reps->exit_freeze_after;
             printf("%s started freezing mode1 at %lu (can exit at %lu) - %d - Size Buffer %d\n", _name.c_str(), eventlist().now() / 1000, circular_buffer_reps->can_exit_frozen_mode / 1000, circular_buffer_reps->isFrozenMode(), circular_buffer_reps->getSize()); 
             printf("Last Max RTT %lu - RTO Start %lu - Time is %lu - Base RTT is %lu -- Max %lu at %lu\n", _last_rto_max_rtt/1000, _last_rto_start/1000, eventlist().now()/1000, _base_rtt/1000, _max_rtt_seen/1000, _when__max_rtt_seen/1000);
         } else if (!_trim_disbled) {
             circular_buffer_reps->setFrozenMode(true);
+            // [GAP-REPS instr] Count freeze entry; setFrozenMode is a no-op under -freezeoff.
+            if (circular_buffer_reps->isFrozenMode())
+                _reps_stats.freeze_entries++;
             circular_buffer_reps->can_exit_frozen_mode = eventlist().now() +  circular_buffer_reps->exit_freeze_after;
             printf("%s started freezing mode2 at %lu (can exit at %lu) - Explore Counter %d - %d - Size Buffer %d\n", _name.c_str(), eventlist().now() / 1000, circular_buffer_reps->can_exit_frozen_mode / 1000, circular_buffer_reps->explore_counter, circular_buffer_reps->isFrozenMode(), circular_buffer_reps->getSize()); 
         }   
