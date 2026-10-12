@@ -3,14 +3,12 @@
 parse_output
 htsim_*
 *.dat
-*.csv
 idmap.txt
 *_test
 *.out
 *.pyc
 **/validation/**/*.cm
 *.pdf
-*.png
 !example_validate.json
 *_test
 *.txt
